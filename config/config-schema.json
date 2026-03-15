@@ -75,6 +75,26 @@
         }
       }
     },
+    "delivery": {
+      "type": "object",
+      "description": "How the digest is delivered to the user",
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["stdout", "telegram", "email"],
+          "default": "stdout",
+          "description": "Delivery method: stdout (terminal/agent), telegram (bot message), email (via Resend)"
+        },
+        "chatId": {
+          "type": "string",
+          "description": "Telegram chat ID (only for telegram method). Get this by messaging the bot and checking updates."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address to send digest to (only for email method)"
+        }
+      }
+    },
     "onboardingComplete": {
       "type": "boolean",
       "default": false,

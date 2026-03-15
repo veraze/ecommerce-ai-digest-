@@ -56,43 +56,89 @@ Then ask: "What time works best? And what timezone are you in?"
 
 For weekly, also ask which day.
 
-### Step 3: Language
+### Step 3: Delivery Method
+
+Ask: "How would you like to receive your digest?"
+- **Telegram** — I'll send it to you as a Telegram message
+- **Email** — I'll email it to you
+- **Right here** — I'll show it in this chat (only works if you're using OpenClaw or a persistent agent)
+
+**If Telegram:**
+Guide the user step by step:
+1. Open Telegram and search for @BotFather
+2. Send /newbot to BotFather
+3. Choose a name (e.g. "My AI Digest")
+4. Choose a username (e.g. "myaidigest_bot") — must end in "bot"
+5. BotFather will give you a token like "7123456789:AAH..." — copy it
+6. Now open a chat with your new bot (search its username) and send it any message (e.g. "hi")
+7. This is important — you MUST send a message to the bot first, otherwise delivery won't work
+
+Then add the token to the .env file. To get the chat ID, run:
+```bash
+curl -s "https://api.telegram.org/bot<TOKEN>/getUpdates" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['result'][0]['message']['chat']['id'])" 2>/dev/null || echo "No messages found — make sure you sent a message to your bot first"
+```
+
+Save the chat ID in config.json under `delivery.chatId`.
+
+**If Email:**
+Ask for their email address.
+Then they need a Resend API key:
+1. Go to https://resend.com
+2. Sign up (free tier gives 100 emails/day — more than enough)
+3. Go to API Keys in the dashboard
+4. Create a new key and copy it
+
+Add the key to the .env file.
+
+### Step 4: Language
 
 Ask: "What language do you prefer for your digest?"
 - English
 - Chinese (translated from English sources)
 - Bilingual (both English and Chinese, side by side)
 
-### Step 4: API Keys
+### Step 5: API Keys
 
-Tell the user you need one free API key, then guide them step by step:
-
-"I need one API key to fetch YouTube podcast transcripts. X/Twitter posts are
-fetched for free with no API key needed.
-
-**Supadata (for YouTube podcast transcripts)**
-- Go to https://supadata.ai
-- Click 'Get Started' or 'Sign Up'
-- Create an account (you can use Google sign-in)
-- Once logged in, go to your Dashboard
-- You'll see your API key on the main page — copy it
-
-The free tier gives you 200 credits per month — more than enough for daily digests."
-
-Then create the .env file with placeholders:
+Create the .env file with placeholders based on what the user needs:
 
 ```bash
 mkdir -p ~/.follow-builders
 cat > ~/.follow-builders/.env << 'ENVEOF'
 # Supadata API key (for YouTube transcripts)
-# Get yours at: https://supadata.ai
+# Get yours at: https://supadata.ai — sign up, go to dashboard, copy key
 SUPADATA_API_KEY=paste_your_key_here
+
+# Telegram bot token (only if using Telegram delivery)
+# Get yours from @BotFather on Telegram
+# TELEGRAM_BOT_TOKEN=paste_your_token_here
+
+# Resend API key (only if using email delivery)
+# Get yours at: https://resend.com — sign up, go to API Keys
+# RESEND_API_KEY=paste_your_key_here
 ENVEOF
 ```
 
-Open the file for the user to paste their keys. Wait for them to confirm they've added the keys.
+Uncomment the lines the user needs based on their chosen delivery method.
 
-### Step 5: Show Sources
+Tell the user:
+
+"I need one API key to fetch YouTube podcast transcripts. X/Twitter posts are
+fetched for free — no API key needed.
+
+**Supadata (required)**
+- Go to https://supadata.ai
+- Click 'Get Started' or 'Sign Up'
+- Create an account (you can use Google sign-in)
+- Once logged in, go to your Dashboard
+- You'll see your API key on the main page — copy it
+- Free tier gives 200 credits/month — more than enough for daily digests"
+
+If they chose Telegram or email delivery, also remind them to add that key
+(the instructions were already given in Step 3).
+
+Open the .env file for the user to paste their keys. Wait for them to confirm.
+
+### Step 6: Show Sources
 
 Show the full list of default builders and podcasts being tracked.
 Read from `config/default-sources.json` and display as a clean list.
@@ -100,7 +146,7 @@ Read from `config/default-sources.json` and display as a clean list.
 Tell the user: "You can add or remove sources anytime — just tell me in plain
 language. For example: 'Add @username to my list' or 'Remove Lenny's Podcast'."
 
-### Step 6: Configuration Reminder
+### Step 7: Configuration Reminder
 
 "All your settings can be changed anytime through conversation:
 - 'Switch to weekly digests'
@@ -111,7 +157,7 @@ language. For example: 'Add @username to my list' or 'Remove Lenny's Podcast'."
 
 No need to edit any files — just tell me what you want."
 
-### Step 7: Set Up Cron
+### Step 8: Set Up Cron
 
 Save the config:
 ```bash
@@ -150,7 +196,7 @@ openclaw cron add \
 **For Claude Code:**
 Use the CronCreate tool to schedule the digest at the user's preferred time.
 
-### Step 8: Welcome Digest
+### Step 9: Welcome Digest
 
 **DO NOT skip this step.** Immediately after setting up the cron job, generate
 and send the user their first digest so they can see what it looks like.
@@ -265,7 +311,20 @@ Read `config.json` for the language preference:
 
 ### Step 6: Deliver
 
-Output the formatted digest. The platform handles delivery:
+Check the `delivery.method` in config.json:
+
+**If "telegram" or "email":**
+Save the formatted digest to a temp file, then run the delivery script:
+```bash
+echo '<digest text>' > /tmp/fb-digest.txt
+cd ${CLAUDE_SKILL_DIR}/scripts && node deliver.js --file /tmp/fb-digest.txt 2>/dev/null
+```
+
+The delivery script reads the user's config and sends via the right channel.
+If delivery fails, show the digest in the terminal as fallback.
+
+**If "stdout" (default):**
+Just output the digest directly. The platform handles delivery:
 - OpenClaw routes it to the user's messaging channel
 - Claude Code displays it in the terminal
 
@@ -288,6 +347,11 @@ When the user says something that sounds like a settings change, handle it:
 
 ### Language Changes
 - "Switch to Chinese/English/bilingual" → Update `language` in config.json
+
+### Delivery Changes
+- "Switch to Telegram/email" → Update `delivery.method` in config.json, guide user through setup if needed
+- "Change my email" → Update `delivery.email` in config.json
+- "Send to this chat instead" → Set `delivery.method` to "stdout"
 
 ### Prompt Changes
 - "Make summaries shorter/longer" → Edit the relevant prompt file
