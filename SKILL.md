@@ -313,9 +313,8 @@ Read the prompts from the `prompts` field in the JSON:
 - `prompts.translate` — how to translate to Chinese
 
 **Podcast:** The `podcasts` array has at most 1 episode. If present:
-1. Check the title — skip if not AI-relevant
-2. Summarize its `transcript` using `prompts.summarize_podcast`
-3. Use `name`, `title`, and `url` from the JSON object — NOT from the transcript
+1. Summarize its `transcript` using `prompts.summarize_podcast`
+2. Use `name`, `title`, and `url` from the JSON object — NOT from the transcript
 
 **Tweets:** The `x` array has builders with tweets. Process one at a time:
 1. Use their `bio` field for their role (e.g. bio says "ceo @box" → "Box CEO Aaron Levie")
