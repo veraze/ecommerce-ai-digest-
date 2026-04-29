@@ -1,14 +1,13 @@
 **English** | [中文](README.zh-CN.md)
 
-# Follow AI × Commerce Operators
+# Follow AI × e-Commerce founders 
 
-An AI-powered digest that tracks top operators, founders, and builders at the intersection
+An AI-powered digest that tracks top founders, and builders at the intersection
 of AI and e-commerce — people running real stores, shipping commerce tools, and sharing
 what actually works — and delivers curated, implementation-focused summaries of what
 they're testing and learning.
 
-**Philosophy:** Follow people who run stores, build tools, and share real numbers —
-not commentators who describe trends without doing the work.
+**Philosophy:**  Follow the people actually doing it, not talking about it.
 
 ## What You Get
 
@@ -108,6 +107,7 @@ No X/Twitter API key needed — tweets are fetched via Rettiwt guest mode.
 - If you use Telegram/email delivery, those keys are stored locally in `~/.follow-builders/.env`
 - The skill only reads public content (public YouTube videos, public X posts)
 - Your configuration, preferences, and reading history stay on your machine
+- Inspired by and forked from @zarazhangrui
 
 ## License
 
