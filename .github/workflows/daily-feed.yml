@@ -35,8 +35,8 @@ jobs:
 
       - name: Generate feeds
         env:
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-          # POD2TXT_API_KEY not needed — using direct RSS parsing for podcasts
+          # X/Twitter uses Rettiwt guest mode — no X_BEARER_TOKEN needed
+          POD2TXT_API_KEY: ${{ secrets.POD2TXT_API_KEY }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" != "all" ]; then
             cd scripts && node generate-feed.js --${{ inputs.mode }}

@@ -518,99 +518,64 @@ async function fetchPodcastContent(podcasts, apiKey, state, errors) {
   return [];
 }
 
-// -- X/Twitter Fetching (Official API v2) ------------------------------------
+// -- X/Twitter Fetching (Rettiwt guest mode — no API key required) -----------
 
-async function fetchXContent(xAccounts, bearerToken, state, errors) {
+async function fetchXContent(xAccounts, _bearerToken, state, errors) {
+  const { Rettiwt } = await import("rettiwt-api");
   const results = [];
   const cutoff = new Date(Date.now() - TWEET_LOOKBACK_HOURS * 60 * 60 * 1000);
 
-  // Batch lookup all user IDs (1 API call)
-  const handles = xAccounts.map((a) => a.handle);
-  let userMap = {};
-
-  for (let i = 0; i < handles.length; i += 100) {
-    const batch = handles.slice(i, i + 100);
-    try {
-      const res = await fetch(
-        `${X_API_BASE}/users/by?usernames=${batch.join(",")}&user.fields=name,description`,
-        { headers: { Authorization: `Bearer ${bearerToken}` } },
-      );
-
-      if (!res.ok) {
-        errors.push(`X API: User lookup failed: HTTP ${res.status}`);
-        continue;
-      }
-
-      const data = await res.json();
-      for (const user of data.data || []) {
-        userMap[user.username.toLowerCase()] = {
-          id: user.id,
-          name: user.name,
-          description: user.description || "",
-        };
-      }
-      if (data.errors) {
-        for (const err of data.errors) {
-          errors.push(`X API: User not found: ${err.value || err.detail}`);
-        }
-      }
-    } catch (err) {
-      errors.push(`X API: User lookup error: ${err.message}`);
-    }
+  let rettiwt;
+  try {
+    rettiwt = new Rettiwt(); // guest mode — no auth token needed
+  } catch (err) {
+    errors.push(`Rettiwt: Failed to initialize: ${err.message}`);
+    return results;
   }
 
-  // Fetch recent tweets per user (max 3, exclude retweets/replies)
   for (const account of xAccounts) {
-    const userData = userMap[account.handle.toLowerCase()];
-    if (!userData) continue;
-
     try {
-      const res = await fetch(
-        `${X_API_BASE}/users/${userData.id}/tweets?` +
-          `max_results=5` + // fetch 5, then filter to 3 new ones
-          `&tweet.fields=created_at,public_metrics,referenced_tweets,note_tweet` +
-          `&exclude=retweets,replies` +
-          `&start_time=${cutoff.toISOString()}`,
-        { headers: { Authorization: `Bearer ${bearerToken}` } },
-      );
-
-      if (!res.ok) {
-        if (res.status === 429) {
-          errors.push(`X API: Rate limited, skipping remaining accounts`);
-          break;
-        }
-        errors.push(
-          `X API: Failed to fetch tweets for @${account.handle}: HTTP ${res.status}`,
-        );
+      // Get user profile (needed for user ID + bio)
+      const userDetails = await rettiwt.user.details(account.handle);
+      if (!userDetails) {
+        errors.push(`Rettiwt: User not found: @${account.handle}`);
         continue;
       }
 
-      const data = await res.json();
-      const allTweets = data.data || [];
+      // Fetch recent tweets (fetch more than needed so we have room to filter)
+      const timeline = await rettiwt.user.tweets(
+        userDetails.id,
+        MAX_TWEETS_PER_USER * 3,
+      );
+      const allTweets = timeline?.list ?? [];
 
-      // Filter out already-seen tweets, cap at 3
       const newTweets = [];
-      for (const t of allTweets) {
-        if (state.seenTweets[t.id]) continue; // dedup
+      for (const tweet of allTweets) {
         if (newTweets.length >= MAX_TWEETS_PER_USER) break;
 
+        const tweetId = tweet.id;
+        const createdAt = new Date(tweet.createdAt);
+
+        if (createdAt < cutoff) continue;        // too old
+        if (state.seenTweets[tweetId]) continue; // already sent
+        if (tweet.replyTo) continue;             // skip replies
+        // Skip pure retweets (text starts with "RT @")
+        const text = tweet.fullText || tweet.text || "";
+        if (text.startsWith("RT @")) continue;
+
         newTweets.push({
-          id: t.id,
-          // note_tweet.text has the full untruncated text for long tweets (>280 chars)
-          text: t.note_tweet?.text || t.text,
-          createdAt: t.created_at,
-          url: `https://x.com/${account.handle}/status/${t.id}`,
-          likes: t.public_metrics?.like_count || 0,
-          retweets: t.public_metrics?.retweet_count || 0,
-          replies: t.public_metrics?.reply_count || 0,
-          isQuote:
-            t.referenced_tweets?.some((r) => r.type === "quoted") || false,
-          quotedTweetId:
-            t.referenced_tweets?.find((r) => r.type === "quoted")?.id || null,
+          id: tweetId,
+          text,
+          createdAt: tweet.createdAt,
+          url: `https://x.com/${account.handle}/status/${tweetId}`,
+          likes: tweet.likeCount ?? 0,
+          retweets: tweet.retweetCount ?? 0,
+          replies: tweet.replyCount ?? 0,
+          isQuote: !!tweet.quoted,
+          quotedTweetId: tweet.quoted?.id ?? null,
         });
 
-        // Mark as seen
-        state.seenTweets[t.id] = Date.now();
+        state.seenTweets[tweetId] = Date.now();
       }
 
       if (newTweets.length === 0) continue;
@@ -619,13 +584,15 @@ async function fetchXContent(xAccounts, bearerToken, state, errors) {
         source: "x",
         name: account.name,
         handle: account.handle,
-        bio: userData.description,
+        bio: userDetails.description ?? "",
         tweets: newTweets,
       });
 
-      await new Promise((r) => setTimeout(r, 200));
+      // Be polite to guest endpoints — 1.5s between accounts
+      await new Promise((r) => setTimeout(r, 1500));
     } catch (err) {
-      errors.push(`X API: Error fetching @${account.handle}: ${err.message}`);
+      errors.push(`Rettiwt: Error fetching @${account.handle}: ${err.message}`);
+      await new Promise((r) => setTimeout(r, 3000)); // back off on error
     }
   }
 
@@ -987,17 +954,13 @@ async function main() {
   const runPodcasts = podcastsOnly || (!tweetsOnly && !blogsOnly);
   const runBlogs = blogsOnly || (!tweetsOnly && !podcastsOnly);
 
-  const xBearerToken = process.env.X_BEARER_TOKEN;
   const pod2txtKey = process.env.POD2TXT_API_KEY;
 
   if (runPodcasts && !pod2txtKey) {
     console.error("POD2TXT_API_KEY not set");
     process.exit(1);
   }
-  if (runTweets && !xBearerToken) {
-    console.error("X_BEARER_TOKEN not set");
-    process.exit(1);
-  }
+  // X/Twitter uses Rettiwt guest mode — no API key needed
 
   const sources = await loadSources();
   const state = await loadState();
@@ -1008,7 +971,7 @@ async function main() {
     console.error("Fetching X/Twitter content...");
     const xContent = await fetchXContent(
       sources.x_accounts,
-      xBearerToken,
+      null, // Rettiwt guest mode — no token needed
       state,
       errors,
     );

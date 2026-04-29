@@ -1,74 +1,31 @@
 {
   "podcasts": [
     {
-      "name": "My First Million",
-      "rssUrl": "https://feeds.megaphone.fm/ROOSTERGNN9574878827",
-      "url": "https://www.youtube.com/@MyFirstMillionPod"
+      "name": "The Ecom Academy",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8TxEWU4anfqfeJJxuOavNQ",
+      "url": "https://www.youtube.com/@theecomacademy"
     },
     {
-      "name": "eCommerceFuel",
-      "rssUrl": "https://feeds.libsyn.com/8851/rss",
-      "url": "https://www.youtube.com/@eCommerceFuel"
+      "name": "Davie Fogarty",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-JHxwWL4-WoqyQIYsBvTbA",
+      "url": "https://www.youtube.com/@DavieFogarty"
     },
     {
-      "name": "DTC Pod",
-      "rssUrl": "https://feeds.buzzsprout.com/1137078.rss",
-      "url": "https://www.youtube.com/@DTCPod"
-    },
-    {
-      "name": "Operators",
-      "rssUrl": "https://feeds.megaphone.fm/operators",
-      "url": "https://www.youtube.com/@OperatorsPodcast"
-    },
-    {
-      "name": "How I Built This",
-      "rssUrl": "https://feeds.npr.org/510313/podcast.xml",
-      "url": "https://www.youtube.com/@HowIBuiltThis"
-    },
-    {
-      "name": "Acquired",
-      "rssUrl": "https://feeds.simplecast.com/lt3lMmLY",
-      "url": "https://www.youtube.com/@AcquiredFM"
+      "name": "Daan Jonkman — AI for Shopify",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCzDhI4pE7UVV5kpN7EzFdjA",
+      "url": "https://www.youtube.com/@daanjonkman"
     }
   ],
-  "blogs": [
-    {
-      "name": "Shopify Engineering",
-      "type": "scrape",
-      "indexUrl": "https://shopify.engineering",
-      "articleBaseUrl": "https://shopify.engineering/",
-      "fetchMethod": "http"
-    },
-    {
-      "name": "Shopify Blog",
-      "type": "scrape",
-      "indexUrl": "https://www.shopify.com/blog",
-      "articleBaseUrl": "https://www.shopify.com/blog/",
-      "fetchMethod": "http"
-    }
-  ],
+  "blogs": [],
   "x_accounts": [
-    { "name": "Tobi Lütke",         "handle": "tobi" },
-    { "name": "Harley Finkelstein", "handle": "harleyf" },
-    { "name": "Nick Sharma",        "handle": "mrsharma" },
-    { "name": "Cody Plofker",       "handle": "codyplofker" },
-    { "name": "Taylor Holiday",     "handle": "taylorholiday" },
-    { "name": "Ezra Firestone",     "handle": "ezrafirestone" },
-    { "name": "Kyle Hency",         "handle": "kylehency" },
-    { "name": "Andrew Youderian",   "handle": "youderian" },
-    { "name": "Chase Dimond",       "handle": "ecomchasedimond" },
-    { "name": "Jason Goldberg",     "handle": "betashop" },
-    { "name": "Moiz Ali",           "handle": "moizali" },
-    { "name": "Rick Watson",        "handle": "rickatomerch" },
-    { "name": "Eli Weiss",          "handle": "eliweiss" },
-    { "name": "Kunle Campbell",     "handle": "2xecommerce" },
-    { "name": "Tracey Wallace",     "handle": "tracewall" },
-    { "name": "Andrew Foxwell",     "handle": "andrewfoxwell" },
-    { "name": "Sam Parr",           "handle": "theSamParr" },
-    { "name": "Shaan Puri",         "handle": "ShaanVP" },
-    { "name": "Katelyn Bourgoin",   "handle": "KateBour" },
-    { "name": "Matthew Holman",     "handle": "holman_matt" },
-    { "name": "Sam Altman",         "handle": "sama" },
-    { "name": "Shopify",            "handle": "Shopify" }
+    { "name": "Davie Fogarty",    "handle": "daviefogarty" },
+    { "name": "Oliver Brocato",   "handle": "oliverbrocato" },
+    { "name": "Noah Frydberg",    "handle": "maverickecom" },
+    { "name": "Chad Rubin",       "handle": "itschadrubin" },
+    { "name": "Maxwell Finn",     "handle": "maxwellfinn" },
+    { "name": "Kurt Elster",      "handle": "kurtinc" },
+    { "name": "Matthew Bertulli", "handle": "mbertulli" },
+    { "name": "Tobi Lütke",       "handle": "tobi" },
+    { "name": "Chris Lang",       "handle": "ChrisLangSocial" }
   ]
 }
