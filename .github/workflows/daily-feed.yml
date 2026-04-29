@@ -36,7 +36,8 @@ jobs:
       - name: Generate feeds
         env:
           # X/Twitter uses Rettiwt guest mode — no X_BEARER_TOKEN needed
-          POD2TXT_API_KEY: ${{ secrets.POD2TXT_API_KEY }}
+          # YouTube transcripts via Supadata — register free at https://supadata.ai
+          SUPADATA_API_KEY: ${{ secrets.SUPADATA_API_KEY }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" != "all" ]; then
             cd scripts && node generate-feed.js --${{ inputs.mode }}
