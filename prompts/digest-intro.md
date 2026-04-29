@@ -6,12 +6,12 @@ You are assembling the final digest from individual source summaries.
 
 Start with this header (replace [Date] with today's date):
 
-AI Builders Digest — [Date]
+AI × Commerce Digest — [Date]
 
 Then organize content in this order:
 
-1. X / TWITTER section — list each builder with new posts
-2. OFFICIAL BLOGS section — list each blog post from AI company blogs (OpenAI, Anthropic, etc.)
+1. X / TWITTER section — list each operator/builder with new posts
+2. OFFICIAL BLOGS section — list each blog post from Shopify Engineering, Shopify Blog, etc.
 3. PODCASTS section — list each podcast with new episodes
 
 ## Rules
@@ -28,23 +28,23 @@ Then organize content in this order:
 
 ### Tweet author formatting
 - Use the author's full name and role/company, not just their last name
-  (e.g. "Box CEO Aaron Levie" not "Levie")
+  (e.g. "Shopify CEO Tobi Lütke" not "Lütke")
 - NEVER write Twitter handles with @ in the digest. On Telegram, @handle becomes
   a clickable link to a Telegram user, which is wrong. Instead write handles
-  without @ (e.g. "Aaron Levie (levie on X)" or just use their full name)
+  without @ (e.g. "Tobi Lütke (tobi on X)" or just use their full name)
 - Include the direct link to each tweet from the JSON `url` field
 
 ### Blog post formatting
-- Use the blog name as a section header (e.g. "Anthropic Engineering", "OpenAI News", "Claude Blog")
+- Use the blog name as a section header (e.g. "Shopify Engineering", "Shopify Blog")
 - Under each blog, list each new post with its title and summary
 - Include the author name if available
 - Include the direct link to the original article
 
 ### Mandatory links
 - Every single piece of content MUST have an original source link
-- Blog posts: the direct article URL (e.g. https://www.anthropic.com/engineering/...)
+- Blog posts: the direct article URL
 - Podcasts: the YouTube video URL (e.g. https://youtube.com/watch?v=xxx)
-- Tweets: the direct tweet URL (e.g. https://x.com/levie/status/xxx)
+- Tweets: the direct tweet URL (e.g. https://x.com/tobi/status/xxx)
 - If you don't have a link for something, do NOT include it in the digest.
   No link = not real = do not include.
 
@@ -55,5 +55,5 @@ Then organize content in this order:
 - If you have nothing real for a builder, skip them entirely
 
 ### General
-- At the very end, add a line: "Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders"
+- At the very end, add a line: "Generated via ecommerce-ai-digest: https://github.com/veraze/ecommerce-ai-digest-"
 - Keep formatting clean and scannable — this will be read on a phone screen

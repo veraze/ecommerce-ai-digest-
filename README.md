@@ -1,131 +1,128 @@
-**English** | [中文](README.zh-CN.md)
+# AI × Commerce Digest
 
-# Follow Builders, Not Influencers
+A daily digest that tracks the top operators, founders, and builders at the intersection
+of AI and e-commerce — and delivers curated, implementation-focused summaries of what
+they're shipping, testing, and learning.
 
-An AI-powered digest that tracks the top builders in AI — researchers, founders, PMs,
-and engineers who are actually building things — and delivers curated summaries of
-what they're saying.
-
-**Philosophy:** Follow people who build products and have original opinions, not
-influencers who regurgitate information.
+**Philosophy:** Follow people who run stores, build tools, and share real numbers —
+not commentators who describe trends without doing the work.
 
 ## What You Get
 
-A daily or weekly digest delivered to your preferred messaging app (Telegram, Discord,
-WhatsApp, etc.) with:
+A daily or weekly digest delivered to Telegram (or email) with:
 
-- Summaries of new podcast episodes from top AI podcasts
-- Key posts and insights from 25 curated AI builders on X/Twitter
-- Full articles from official AI company blogs (Anthropic Engineering, Claude Blog)
+- Key posts and tactics from 22 curated AI × e-commerce operators on X/Twitter
+- Summaries of new episodes from top commerce and entrepreneurship podcasts
+- Engineering posts from Shopify and other commerce infrastructure teams
 - Links to all original content
 - Available in English, Chinese, or bilingual
 
 ## Quick Start
 
-1. Install the skill in your agent (OpenClaw or Claude Code)
-2. Say "set up follow builders" or invoke `/follow-builders`
-3. The agent walks you through setup conversationally — no config files to edit
+1. Install in Claude Code:
+   ```bash
+   git clone https://github.com/veraze/ecommerce-ai-digest-.git ~/.claude/skills/follow-builders
+   cd ~/.claude/skills/follow-builders/scripts && npm install
+   ```
+2. Say "set up follow builders" to your agent
+3. The agent walks you through setup — no config files to edit
 
-The agent will ask you:
-- How often you want your digest (daily or weekly) and what time
-- What language you prefer
-- How you want it delivered (Telegram, email, or in-chat)
-
-No API keys needed — all content is fetched centrally.
 Your first digest arrives immediately after setup.
 
-## Changing Settings
+## Sources
 
-Your delivery preferences are configurable through conversation. Just tell your agent:
-
-- "Switch to weekly digests on Monday mornings"
-- "Change language to Chinese"
-- "Make the summaries shorter"
-- "Show me my current settings"
-
-The source list (builders and podcasts) is curated centrally and updates
-automatically — you always get the latest sources without doing anything.
-
-## Customizing the Summaries
-
-The skill uses plain-English prompt files to control how content is summarized.
-You can customize them two ways:
-
-**Through conversation (recommended):**
-Tell your agent what you want — "Make summaries more concise," "Focus on actionable
-insights," "Use a more casual tone." The agent updates the prompts for you.
-
-**Direct editing (power users):**
-Edit the files in the `prompts/` folder:
-- `summarize-podcast.md` — how podcast episodes are summarized
-- `summarize-tweets.md` — how X/Twitter posts are summarized
-- `summarize-blogs.md` — how blog posts are summarized
-- `digest-intro.md` — the overall digest format and tone
-- `translate.md` — how English content is translated to Chinese
-
-These are plain English instructions, not code. Changes take effect on the next digest.
-
-## Default Sources
+### Operators & Builders on X (22)
+| Name | Handle | Why |
+|------|--------|-----|
+| Tobi Lütke | tobi | Shopify CEO, ships AI into commerce infrastructure |
+| Harley Finkelstein | harleyf | Shopify President, operator insights at scale |
+| Nick Sharma | mrsharma | DTC investor, blunt takes on what actually works |
+| Cody Plofker | codyplofker | CMO Jones Road Beauty, real paid + AI experiments |
+| Taylor Holiday | taylorholiday | Common Thread Collective, DTC data and frameworks |
+| Ezra Firestone | ezrafirestone | Smart Marketer, multi-brand e-comm operator |
+| Kyle Hency | kylehency | Gorgias CEO, AI in e-commerce customer service |
+| Andrew Youderian | youderian | eCommerceFuel founder, operator community |
+| Chase Dimond | ecomchasedimond | Email marketing for e-commerce |
+| Jason Goldberg | betashop | Commerce tech analyst |
+| Moiz Ali | moizali | DTC brand founder, blunt operator takes |
+| Rick Watson | rickatomerch | Commerce technology strategist |
+| Eli Weiss | eliweiss | Retention/CX at Jones Road |
+| Kunle Campbell | 2xecommerce | E-commerce operator and educator |
+| Tracey Wallace | tracewall | Content & commerce strategy |
+| Andrew Foxwell | andrewfoxwell | Paid social for e-commerce |
+| Sam Parr | theSamParr | My First Million, business builder |
+| Shaan Puri | ShaanVP | My First Million, business builder |
+| Katelyn Bourgoin | KateBour | Consumer psychology and buying behavior |
+| Matthew Holman | holman_matt | Subscription commerce |
+| Sam Altman | sama | OpenAI CEO — AI capabilities that affect commerce |
+| Shopify | Shopify | Official announcements and product launches |
 
 ### Podcasts (6)
-- [Latent Space](https://www.youtube.com/@LatentSpacePod)
-- [Training Data](https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8)
-- [No Priors](https://www.youtube.com/@NoPriorsPodcast)
-- [Unsupervised Learning](https://www.youtube.com/@RedpointAI)
-- [The MAD Podcast with Matt Turck](https://www.youtube.com/@DataDrivenNYC)
-- [AI & I by Every](https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL)
+- [My First Million](https://www.youtube.com/@MyFirstMillionPod) — business ideas, commerce, operator stories
+- [eCommerceFuel](https://www.youtube.com/@eCommerceFuel) — DTC operator deep-dives
+- [DTC Pod](https://www.youtube.com/@DTCPod) — brand building and growth
+- [Operators](https://www.youtube.com/@OperatorsPodcast) — founders running real businesses
+- [How I Built This](https://www.youtube.com/@HowIBuiltThis) — origin stories of commerce companies
+- [Acquired](https://www.youtube.com/@AcquiredFM) — deep dives on companies that shaped commerce
 
-### AI Builders on X (25)
-[Andrej Karpathy](https://x.com/karpathy), [Swyx](https://x.com/swyx), [Josh Woodward](https://x.com/joshwoodward), [Kevin Weil](https://x.com/kevinweil), [Peter Yang](https://x.com/petergyang), [Nan Yu](https://x.com/thenanyu), [Madhu Guru](https://x.com/realmadhuguru), [Amanda Askell](https://x.com/AmandaAskell), [Cat Wu](https://x.com/_catwu), [Thariq](https://x.com/trq212), [Google Labs](https://x.com/GoogleLabs), [Amjad Masad](https://x.com/amasad), [Guillermo Rauch](https://x.com/rauchg), [Alex Albert](https://x.com/alexalbert__), [Aaron Levie](https://x.com/levie), [Ryo Lu](https://x.com/ryolu_), [Garry Tan](https://x.com/garrytan), [Matt Turck](https://x.com/mattturck), [Zara Zhang](https://x.com/zarazhangrui), [Nikunj Kothari](https://x.com/nikunj), [Peter Steinberger](https://x.com/steipete), [Dan Shipper](https://x.com/danshipper), [Aditya Agarwal](https://x.com/adityaag), [Sam Altman](https://x.com/sama), [Claude](https://x.com/claudeai)
-
-### Official Blogs (2)
-- [Anthropic Engineering](https://www.anthropic.com/engineering) — technical deep-dives from the Anthropic team
-- [Claude Blog](https://claude.com/blog) — product announcements and updates from Claude
-
-## Installation
-
-### OpenClaw
-```bash
-# From ClawhHub (coming soon)
-clawhub install follow-builders
-
-# Or manually
-git clone https://github.com/zarazhangrui/follow-builders.git ~/skills/follow-builders
-cd ~/skills/follow-builders/scripts && npm install
-```
-
-### Claude Code
-```bash
-git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders
-cd ~/.claude/skills/follow-builders/scripts && npm install
-```
-
-## Requirements
-
-- An AI agent (OpenClaw, Claude Code, or similar)
-- Internet connection (to fetch the central feed)
-
-That's it. No API keys needed. All content (blog articles + YouTube transcripts + X/Twitter posts)
-is fetched centrally and updated daily.
+### Blogs (2)
+- [Shopify Engineering](https://shopify.engineering) — technical decisions at commerce scale
+- [Shopify Blog](https://www.shopify.com/blog) — product and merchant updates
 
 ## How It Works
 
-1. A central feed is updated daily with the latest content from all sources
-   (blog articles via web scraping, YouTube transcripts via Supadata, X/Twitter via official API)
-2. Your agent fetches the feed — one HTTP request, no API keys
-3. Your agent remixes the raw content into a digestible summary using your preferences
-4. The digest is delivered to your messaging app (or shown in-chat)
+1. GitHub Actions runs `generate-feed.js` daily at 6am UTC, fetching tweets and podcast episodes
+2. Feed files (`feed-x.json`, `feed-podcasts.json`, `feed-blogs.json`) are committed to this repo
+3. Your agent fetches the feeds, remixes the content into a digest using your preferences
+4. The digest is delivered to Telegram, email, or shown in-chat
 
-See [examples/sample-digest.md](examples/sample-digest.md) for what the output looks like.
+Optionally, you can deploy the included Cloudflare Worker (`server/worker.js`) to serve
+feeds via KV storage instead of GitHub raw files — faster and no rate limit concerns.
 
-## Privacy
+## Requirements
 
-- No API keys are sent anywhere — all content is fetched centrally
-- If you use Telegram/email delivery, those keys are stored locally in `~/.follow-builders/.env`
-- The skill only reads public content (public blog posts, public YouTube videos, public X posts)
-- Your configuration, preferences, and reading history stay on your machine
+- An AI agent (Claude Code or similar)
+- `X_BEARER_TOKEN` secret in your GitHub repo → Settings → Secrets (for tweet fetching)
+- Internet connection
+
+> **Note on X API:** The feed generator uses the official X API v2 with a Bearer Token.
+> You need a free X Developer account at [developer.x.com](https://developer.x.com).
+> The free tier allows fetching recent tweets, which is all this tool needs.
+
+## Changing Settings
+
+Tell your agent:
+- "Switch to weekly digests on Monday mornings"
+- "Change language to Chinese"
+- "Make the summaries focus more on specific tactics and numbers"
+- "Show me my current settings"
+
+## Customizing Summaries
+
+Edit the files in `prompts/`:
+- `summarize-tweets.md` — how X/Twitter posts are summarized
+- `summarize-podcast.md` — how podcast episodes are summarized
+- `summarize-blogs.md` — how blog posts are summarized
+- `digest-intro.md` — overall format and tone
+- `translate.md` — English → Chinese translation style
+
+These are plain English instructions. Changes take effect on the next digest.
+
+## Cloudflare Worker (Optional)
+
+For faster feed delivery without GitHub raw file latency:
+
+```bash
+npm install -g wrangler
+wrangler kv:namespace create FEEDS
+# Add the namespace ID to wrangler.toml
+wrangler deploy
+```
+
+Then uncomment the KV push step in `.github/workflows/daily-feed.yml` and add
+`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, and `CLOUDFLARE_KV_NAMESPACE_ID`
+as GitHub secrets.
 
 ## License
 
 MIT
-

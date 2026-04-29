@@ -1,0 +1,75 @@
+name: Daily Feed — AI × Commerce
+
+on:
+  schedule:
+    # Runs daily at 6am UTC (2pm Shanghai, before most users' 8am digest)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'What to fetch'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - tweets-only
+          - podcasts-only
+          - blogs-only
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: cd scripts && npm install
+
+      - name: Generate feeds
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          # POD2TXT_API_KEY not needed — using direct RSS parsing for podcasts
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" != "all" ]; then
+            cd scripts && node generate-feed.js --${{ inputs.mode }}
+          else
+            cd scripts && node generate-feed.js
+          fi
+
+      - name: Commit and push feeds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add feed-x.json feed-podcasts.json feed-blogs.json state-feed.json
+          git diff --cached --quiet || git commit -m "chore: update feeds [skip ci]"
+          git push
+
+      # Optional: push feeds to Cloudflare KV after commit
+      # Uncomment once you have a Cloudflare Worker deployed
+      #
+      # - name: Push feeds to Cloudflare KV
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     CLOUDFLARE_KV_NAMESPACE_ID: ${{ secrets.CLOUDFLARE_KV_NAMESPACE_ID }}
+      #   run: |
+      #     for feed in feed-x feed-podcasts feed-blogs; do
+      #       curl -s -X PUT \
+      #         "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces/$CLOUDFLARE_KV_NAMESPACE_ID/values/$feed" \
+      #         -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      #         -H "Content-Type: application/json" \
+      #         --data-binary "@${feed}.json"
+      #     done
+      #     # Write updatedAt timestamp
+      #     curl -s -X PUT \
+      #       "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces/$CLOUDFLARE_KV_NAMESPACE_ID/values/updated-at" \
+      #       -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      #       -d "$(date -u +%Y-%m-%dT%H:%M:%SZ)"

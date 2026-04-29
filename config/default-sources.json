@@ -1,77 +1,74 @@
 {
   "podcasts": [
     {
-      "name": "Latent Space",
-      "rssUrl": "https://pod2txt.vercel.app/api/feed?url=https://api.substack.com/feed/podcast/1084089.rss",
-      "url": "https://www.youtube.com/@LatentSpacePod"
+      "name": "My First Million",
+      "rssUrl": "https://feeds.megaphone.fm/ROOSTERGNN9574878827",
+      "url": "https://www.youtube.com/@MyFirstMillionPod"
     },
     {
-      "name": "Training Data",
-      "rssUrl": "https://feeds.megaphone.fm/trainingdata",
-      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+      "name": "eCommerceFuel",
+      "rssUrl": "https://feeds.libsyn.com/8851/rss",
+      "url": "https://www.youtube.com/@eCommerceFuel"
     },
     {
-      "name": "No Priors",
-      "rssUrl": "https://feeds.megaphone.fm/nopriors",
-      "url": "https://www.youtube.com/@NoPriorsPodcast"
+      "name": "DTC Pod",
+      "rssUrl": "https://feeds.buzzsprout.com/1137078.rss",
+      "url": "https://www.youtube.com/@DTCPod"
     },
     {
-      "name": "Unsupervised Learning",
-      "rssUrl": "https://feeds.simplecast.com/dOSE_bdP",
-      "url": "https://www.youtube.com/@RedpointAI"
+      "name": "Operators",
+      "rssUrl": "https://feeds.megaphone.fm/operators",
+      "url": "https://www.youtube.com/@OperatorsPodcast"
     },
     {
-      "name": "The MAD Podcast with Matt Turck",
-      "rssUrl": "https://anchor.fm/s/f2ee4948/podcast/rss",
-      "url": "https://www.youtube.com/@DataDrivenNYC/videos"
+      "name": "How I Built This",
+      "rssUrl": "https://feeds.npr.org/510313/podcast.xml",
+      "url": "https://www.youtube.com/@HowIBuiltThis"
     },
     {
-      "name": "AI & I by Every",
-      "rssUrl": "https://anchor.fm/s/ed1f5584/podcast/rss",
-      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+      "name": "Acquired",
+      "rssUrl": "https://feeds.simplecast.com/lt3lMmLY",
+      "url": "https://www.youtube.com/@AcquiredFM"
     }
   ],
   "blogs": [
     {
-      "name": "Anthropic Engineering",
+      "name": "Shopify Engineering",
       "type": "scrape",
-      "indexUrl": "https://www.anthropic.com/engineering",
-      "articleBaseUrl": "https://www.anthropic.com/engineering/",
+      "indexUrl": "https://shopify.engineering",
+      "articleBaseUrl": "https://shopify.engineering/",
       "fetchMethod": "http"
     },
     {
-      "name": "Claude Blog",
+      "name": "Shopify Blog",
       "type": "scrape",
-      "indexUrl": "https://claude.com/blog",
-      "articleBaseUrl": "https://claude.com/blog/",
+      "indexUrl": "https://www.shopify.com/blog",
+      "articleBaseUrl": "https://www.shopify.com/blog/",
       "fetchMethod": "http"
     }
   ],
   "x_accounts": [
-    { "name": "Andrej Karpathy", "handle": "karpathy" },
-    { "name": "Swyx", "handle": "swyx" },
-    { "name": "Josh Woodward", "handle": "joshwoodward" },
-    { "name": "Kevin Weil", "handle": "kevinweil" },
-    { "name": "Peter Yang", "handle": "petergyang" },
-    { "name": "Nan Yu", "handle": "thenanyu" },
-    { "name": "Madhu Guru", "handle": "realmadhuguru" },
-    { "name": "Amanda Askell", "handle": "AmandaAskell" },
-    { "name": "Cat Wu", "handle": "_catwu" },
-    { "name": "Thariq", "handle": "trq212" },
-    { "name": "Google Labs", "handle": "GoogleLabs" },
-    { "name": "Amjad Masad", "handle": "amasad" },
-    { "name": "Guillermo Rauch", "handle": "rauchg" },
-    { "name": "Alex Albert", "handle": "alexalbert__" },
-    { "name": "Aaron Levie", "handle": "levie" },
-    { "name": "Ryo Lu", "handle": "ryolu_" },
-    { "name": "Garry Tan", "handle": "garrytan" },
-    { "name": "Matt Turck", "handle": "mattturck" },
-    { "name": "Zara Zhang", "handle": "zarazhangrui" },
-    { "name": "Nikunj Kothari", "handle": "nikunj" },
-    { "name": "Peter Steinberger", "handle": "steipete" },
-    { "name": "Dan Shipper", "handle": "danshipper" },
-    { "name": "Aditya Agarwal", "handle": "adityaag" },
-    { "name": "Sam Altman", "handle": "sama" },
-    { "name": "Claude", "handle": "claudeai" }
+    { "name": "Tobi Lütke",         "handle": "tobi" },
+    { "name": "Harley Finkelstein", "handle": "harleyf" },
+    { "name": "Nick Sharma",        "handle": "mrsharma" },
+    { "name": "Cody Plofker",       "handle": "codyplofker" },
+    { "name": "Taylor Holiday",     "handle": "taylorholiday" },
+    { "name": "Ezra Firestone",     "handle": "ezrafirestone" },
+    { "name": "Kyle Hency",         "handle": "kylehency" },
+    { "name": "Andrew Youderian",   "handle": "youderian" },
+    { "name": "Chase Dimond",       "handle": "ecomchasedimond" },
+    { "name": "Jason Goldberg",     "handle": "betashop" },
+    { "name": "Moiz Ali",           "handle": "moizali" },
+    { "name": "Rick Watson",        "handle": "rickatomerch" },
+    { "name": "Eli Weiss",          "handle": "eliweiss" },
+    { "name": "Kunle Campbell",     "handle": "2xecommerce" },
+    { "name": "Tracey Wallace",     "handle": "tracewall" },
+    { "name": "Andrew Foxwell",     "handle": "andrewfoxwell" },
+    { "name": "Sam Parr",           "handle": "theSamParr" },
+    { "name": "Shaan Puri",         "handle": "ShaanVP" },
+    { "name": "Katelyn Bourgoin",   "handle": "KateBour" },
+    { "name": "Matthew Holman",     "handle": "holman_matt" },
+    { "name": "Sam Altman",         "handle": "sama" },
+    { "name": "Shopify",            "handle": "Shopify" }
   ]
 }
