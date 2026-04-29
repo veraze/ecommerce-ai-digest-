@@ -25,7 +25,7 @@ const X_API_BASE = "https://api.x.com/2";
 // Using a real Chrome UA avoids 403 errors in GitHub Actions.
 const RSS_USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
-const TWEET_LOOKBACK_HOURS = 24;
+const TWEET_LOOKBACK_HOURS = 720; // 30 days — Rettiwt guest mode may lag; state deduplication handles repeats
 const PODCAST_LOOKBACK_HOURS = 336; // 14 days — podcasts publish weekly/biweekly, not daily
 const BLOG_LOOKBACK_HOURS = 72;
 const MAX_TWEETS_PER_USER = 3;
@@ -506,7 +506,7 @@ async function fetchXContent(xAccounts, _bearerToken, state, errors) {
       }
 
       // Fetch recent tweets (fetch more than needed so we have room to filter)
-      const timeline = await rettiwt.user.tweets(
+      const timeline = await rettiwt.user.timeline(
         userDetails.id,
         MAX_TWEETS_PER_USER * 3,
       );
