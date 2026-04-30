@@ -81,9 +81,7 @@ cd ~/.claude/skills/follow-builders/scripts && npm install
 
 - 一个 AI agent（Claude Code 或类似工具）
 - 网络连接（用于获取 feed）
-- 在 GitHub 仓库 Secrets 中添加 `SUPADATA_API_KEY`（免费注册：[supadata.ai](https://supadata.ai)）
-
-不需要 X/Twitter API key——推文通过 Rettiwt guest mode 抓取，无需任何账号。
+不需要额外的API KEY
 
 ## 工作原理
 
