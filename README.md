@@ -88,9 +88,9 @@ cd ~/.claude/skills/follow-builders/scripts && npm install
 
 - An AI agent (Claude Code or similar)
 - Internet connection (to fetch the central feed)
-- `SUPADATA_API_KEY` in your GitHub repo Secrets (for YouTube transcripts — free at [supadata.ai](https://supadata.ai))
+That's it. No API keys needed. All content (blog articles + YouTube transcripts + X/Twitter posts) is fetched centrally. 
 
-No X/Twitter API key needed — tweets are fetched via Rettiwt guest mode.
+
 
 ## How It Works
 
