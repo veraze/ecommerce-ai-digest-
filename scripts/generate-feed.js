@@ -16,6 +16,10 @@
 import { readFile, writeFile } from "fs/promises";
 import { existsSync } from "fs";
 import { join } from "path";
+import { execFile } from "child_process";
+import { promisify } from "util";
+
+const execFileAsync = promisify(execFile);
 
 // -- Constants ---------------------------------------------------------------
 
@@ -481,82 +485,53 @@ async function fetchPodcastContent(podcasts, apiKey, state, errors) {
   return [];
 }
 
-// -- X/Twitter Fetching (Rettiwt guest mode — no API key required) -----------
+// -- X/Twitter Fetching (direct GraphQL via session cookies) ------------------
 
 async function fetchXContent(xAccounts, _bearerToken, state, errors) {
-  const { Rettiwt } = await import("rettiwt-api");
   const results = [];
-  const cutoff = new Date(Date.now() - TWEET_LOOKBACK_HOURS * 60 * 60 * 1000);
-
-  let rettiwt;
-  try {
-    rettiwt = new Rettiwt(); // guest mode — no auth token needed
-  } catch (err) {
-    errors.push(`Rettiwt: Failed to initialize: ${err.message}`);
+  const cookieStr = process.env.TWITTER_COOKIES || "";
+  if (!cookieStr) {
+    errors.push("X: TWITTER_COOKIES env var not set — skipping X content");
     return results;
   }
 
-  for (const account of xAccounts) {
-    try {
-      // Get user profile (needed for user ID + bio)
-      const userDetails = await rettiwt.user.details(account.handle);
-      if (!userDetails) {
-        errors.push(`Rettiwt: User not found: @${account.handle}`);
-        continue;
-      }
+  const handles = xAccounts.map((a) => a.handle);
+  const scriptPath = new URL("fetch-tweets.py", import.meta.url).pathname;
+  const python = process.env.PYTHON3_PATH || "python3";
 
-      // Fetch recent tweets (fetch more than needed so we have room to filter)
-      const timeline = await rettiwt.user.timeline(
-        userDetails.id,
-        MAX_TWEETS_PER_USER * 3,
-      );
-      const allTweets = timeline?.list ?? [];
+  let raw;
+  try {
+    const { stdout, stderr } = await execFileAsync(
+      python,
+      [scriptPath, ...handles],
+      {
+        env: { ...process.env, TWITTER_COOKIES: cookieStr },
+        maxBuffer: 5 * 1024 * 1024,
+        timeout: 120_000,
+      },
+    );
+    if (stderr) console.error(stderr.trim());
+    raw = JSON.parse(stdout.trim() || "[]");
+  } catch (err) {
+    errors.push(`X fetch-tweets.py failed: ${err.message}`);
+    return results;
+  }
 
-      const newTweets = [];
-      for (const tweet of allTweets) {
-        if (newTweets.length >= MAX_TWEETS_PER_USER) break;
-
-        const tweetId = tweet.id;
-        const createdAt = new Date(tweet.createdAt);
-
-        if (createdAt < cutoff) continue;        // too old
-        if (state.seenTweets[tweetId]) continue; // already sent
-        if (tweet.replyTo) continue;             // skip replies
-        // Skip pure retweets (text starts with "RT @")
-        const text = tweet.fullText || tweet.text || "";
-        if (text.startsWith("RT @")) continue;
-
-        newTweets.push({
-          id: tweetId,
-          text,
-          createdAt: tweet.createdAt,
-          url: `https://x.com/${account.handle}/status/${tweetId}`,
-          likes: tweet.likeCount ?? 0,
-          retweets: tweet.retweetCount ?? 0,
-          replies: tweet.replyCount ?? 0,
-          isQuote: !!tweet.quoted,
-          quotedTweetId: tweet.quoted?.id ?? null,
-        });
-
-        state.seenTweets[tweetId] = Date.now();
-      }
-
-      if (newTweets.length === 0) continue;
-
-      results.push({
-        source: "x",
-        name: account.name,
-        handle: account.handle,
-        bio: userDetails.description ?? "",
-        tweets: newTweets,
-      });
-
-      // Be polite to guest endpoints — 1.5s between accounts
-      await new Promise((r) => setTimeout(r, 1500));
-    } catch (err) {
-      errors.push(`Rettiwt: Error fetching @${account.handle}: ${err.message}`);
-      await new Promise((r) => setTimeout(r, 3000)); // back off on error
+  for (const item of raw) {
+    const newTweets = [];
+    for (const tweet of item.tweets || []) {
+      if (state.seenTweets[tweet.id]) continue;
+      state.seenTweets[tweet.id] = Date.now();
+      newTweets.push({ ...tweet, isQuote: false, quotedTweetId: null });
     }
+    if (newTweets.length === 0) continue;
+    results.push({
+      source: "x",
+      name: item.name,
+      handle: item.handle,
+      bio: item.bio ?? "",
+      tweets: newTweets,
+    });
   }
 
   return results;
@@ -923,7 +898,7 @@ async function main() {
     console.error("SUPADATA_API_KEY not set — register free at https://supadata.ai");
     process.exit(1);
   }
-  // X/Twitter uses Rettiwt guest mode — no API key needed
+  // X/Twitter uses session cookies via fetch-tweets.py (TWITTER_COOKIES env var)
 
   const sources = await loadSources();
   const state = await loadState();
