@@ -1,9 +1,379 @@
 {
-  "generatedAt": "2026-04-30T08:30:42.247Z",
+  "generatedAt": "2026-04-30T09:41:26.106Z",
   "lookbackHours": 720,
-  "x": [],
+  "x": [
+    {
+      "source": "x",
+      "name": "Davie Fogarty",
+      "handle": "daviefogarty",
+      "bio": "$1,000,000,000 in Shopify ecommerce sales. 700k YouTube Subscribers. Judge on Shark Tank. 1:1 mentoring 👇🏼",
+      "tweets": [
+        {
+          "id": "2049188280155938873",
+          "text": "If I had to rebuild a company from scratch tomorrow and scale it to $1M+, here's the exact order I'd build systems in:\n\n1. AT THE SOLO FOUNDER STAGE, TRACK OUTPUT.\n\nSolo founders trying to build systems when they're the only ones doing the work is unnecessary friction. The only",
+          "createdAt": "2026-04-28T18:05:32+00:00",
+          "url": "https://x.com/daviefogarty/status/2049188280155938873",
+          "likes": 58,
+          "retweets": 6,
+          "replies": 10,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2048116991181942909",
+          "text": "People don’t procrastinate because they lack ambition. They procrastinate because they don’t believe their effort will produce results.\n\nThe reason they don't have that conviction is probably how they were raised or the environment they grew up in. \n\nMaybe a friend laughed at",
+          "createdAt": "2026-04-25T19:08:37+00:00",
+          "url": "https://x.com/daviefogarty/status/2048116991181942909",
+          "likes": 194,
+          "retweets": 18,
+          "replies": 14,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2047740156359196925",
+          "text": "Every founder needs to learn how to say yes to the opportunities that scare them the most. \n\nMine came when I was sitting around the dining room table with mum and dad. \n\nThey told me, “We don't think you're in the right mental headspace to think about doing this opportunity.”",
+          "createdAt": "2026-04-24T18:11:13+00:00",
+          "url": "https://x.com/daviefogarty/status/2047740156359196925",
+          "likes": 41,
+          "retweets": 0,
+          "replies": 10,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "oliverb",
+      "handle": "oliverbrocato",
+      "bio": "Tabs Chocolate (Exited) || Now building https://t.co/kO22YD6KLx → we hunt & kill copycats & counterfeits | Book a call below 👇",
+      "tweets": [
+        {
+          "id": "2049685681052729826",
+          "text": "People used to think good content comes from sounding smart.\n\nAI killed that game overnight.\n\nEven a 12yo can generate “insight” on demand now. Infinite supply.\n\nBut 99% of content still feels irrelevant. Falls flat. Crickets.\n\nOr the replies clock it instantly as AI slop.\n\nWhat",
+          "createdAt": "2026-04-30T03:02:02+00:00",
+          "url": "https://x.com/oliverbrocato/status/2049685681052729826",
+          "likes": 9,
+          "retweets": 0,
+          "replies": 7,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049662780085784747",
+          "text": "Gamification + joymaxxing unlocks everything.\n\nRace the clock. Ship 2 more posts than yesterday.\nTurn close rates into a leaderboard.\nMake winning visible and actively rewarded.\n\nPpl normalize dragging through tasks.\n\nBut work should never be a punishment imo.\n\nBake that in and",
+          "createdAt": "2026-04-30T01:31:02+00:00",
+          "url": "https://x.com/oliverbrocato/status/2049662780085784747",
+          "likes": 12,
+          "retweets": 0,
+          "replies": 5,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049640633531564481",
+          "text": "Luckmaxxing doesn't exist in ecom.\n\n\"Ur so lucky everyone supports u\"\nI spent every spare penny on joining founder groups and attending masterminds while u doomscrolled.\n\n\"The algorithm just favors ur content ig\"\n50 tweets per week minimum. 2 hours daily on replies and",
+          "createdAt": "2026-04-30T00:03:02+00:00",
+          "url": "https://x.com/oliverbrocato/status/2049640633531564481",
+          "likes": 8,
+          "retweets": 0,
+          "replies": 3,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Noah Frydberg | Tiktok Shop For Brands",
+      "handle": "maverickecom",
+      "bio": "I scale 8 figure ecommerce brands with human & AI UGC systems | 1B+ Views, $1M+ Generated, 39K+ Creators Community | Apply to work with me 👇",
+      "tweets": [
+        {
+          "id": "2049566561715843291",
+          "text": "AI-generated UGC is blowing up right now.\nHere’s a 2-minute GUIDE on how to create videos like this 👇\n\nHere’s the exact workflow I use to create AI UGC videos now:\n\n1/ Find your winner angle Before you touch Arcads, know your hook. What problem does the product solve? Lead with https://t.co/EgCsZkdNuk",
+          "createdAt": "2026-04-29T19:08:42+00:00",
+          "url": "https://x.com/maverickecom/status/2049566561715843291",
+          "likes": 80,
+          "retweets": 14,
+          "replies": 24,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049558251579265269",
+          "text": "There is no point in hiring UGC creators anymore when AI UGC looks like this\n\nthis is from our new V2 authority creator system.\n\nthe methods we use ensure realism\n\nwe have perfect:\n&gt; realistic voice with no robotic AI tone\n&gt; realistic movement\n&gt; realistic visuals\n\nand these https://t.co/0vE8eRAzaW",
+          "createdAt": "2026-04-29T18:35:40+00:00",
+          "url": "https://x.com/maverickecom/status/2049558251579265269",
+          "likes": 10,
+          "retweets": 1,
+          "replies": 2,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049555727799243087",
+          "text": "I built an AI Influencer automation in Claude + Arcads \n\n... that Automatically Create UGC Videos while you sleep\n\nComment “UGC” and I’ll send you the full workflow ￼ https://t.co/HZngC3IHLI",
+          "createdAt": "2026-04-29T18:25:39+00:00",
+          "url": "https://x.com/maverickecom/status/2049555727799243087",
+          "likes": 67,
+          "retweets": 2,
+          "replies": 98,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Chad Rubin",
+      "handle": "itschadrubin",
+      "bio": "founder @theeprofasee | skubana & prosper show (acquired) | d2c since ‘06 | +15% profit on amazon w/ smarter pricing⤵️",
+      "tweets": [
+        {
+          "id": "2047322176051638698",
+          "text": "A competitor watched our webinar yesterday. Then sent this 👇  He said it. Not me.  But he’s right.  \n\nSenior PPC Manager: $8K–$12K/mo + benefits + turnover risk \n\nAmazon Agency: $5K–$20K/mo + % of ad spend + 3-month onboarding \n\nSoftware Stack (4–5 tools): $2K–$10K/mo + the https://t.co/kDtruXdrFb",
+          "createdAt": "2026-04-23T14:30:18+00:00",
+          "url": "https://x.com/itschadrubin/status/2047322176051638698",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2046253226643562949",
+          "text": "My senior PPC manager quit.\n\nHis name was Marko.\n\nWhen he gave notice, I did not post the job.\n\nI built the replacement with AI and gave it his name.\n\nMarko.\n\nIf you remember The Matrix, it is the moment where they upload kung fu straight into the brain of Neo.\n\nBecause when a https://t.co/xV6gXPjxUX",
+          "createdAt": "2026-04-20T15:42:41+00:00",
+          "url": "https://x.com/itschadrubin/status/2046253226643562949",
+          "likes": 1,
+          "retweets": 0,
+          "replies": 1,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2041514881640280499",
+          "text": "LinkedIn  and X is becoming a factory for this.\n\nA factory for 5-minute AI slop that takes everyone else 5 hours to review.\n\nI just saw someone post a 265-page AI-generated PDF and ask people to comment for it so the algorithm would amplify the post and help them get more https://t.co/diV8kCcIxQ",
+          "createdAt": "2026-04-07T13:54:11+00:00",
+          "url": "https://x.com/itschadrubin/status/2041514881640280499",
+          "likes": 1,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Maxwell Finn",
+      "handle": "maxwellfinn",
+      "bio": "Saving businesses from ad agencies and junior talent 1 Unicorn Marketer at a time. Click link to get matched with a Unicorn Marketer today!",
+      "tweets": [
+        {
+          "id": "2049585179728269654",
+          "text": "Pointed my Claude Code to @HeyGen's HyperFrames repo and had it build out a skill to create videos like this one direct from the app or CLI. Created it incredibly fast and the video itself didn't cost anything outside of the Claude usage.  \n\nThis was just a basic smoke test, so https://t.co/WUzUjd0ZKs",
+          "createdAt": "2026-04-29T20:22:40+00:00",
+          "url": "https://x.com/maxwellfinn/status/2049585179728269654",
+          "likes": 16,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049251957068509622",
+          "text": "Thanks @GritDaily for the feature \"How Unicorn Marketers is Rewriting the Economics of Marketing Agencies\" 🙏🏻\n\nhttps://gritdaily.com/unicorn-marketers-economics-of-marketing-agencies/ https://t.co/Vd0pohUkc3",
+          "createdAt": "2026-04-28T22:18:34+00:00",
+          "url": "https://x.com/maxwellfinn/status/2049251957068509622",
+          "likes": 4,
+          "retweets": 1,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2048493277662363895",
+          "text": "Something I’m observing in our industry is the people struggling the most prioritized becoming platform experts over becoming true direct response marketing experts since they entered the space. \n\nThey are exceptional at the technical aspects of running ads on Meta, Google, etc.,",
+          "createdAt": "2026-04-26T20:03:51+00:00",
+          "url": "https://x.com/maxwellfinn/status/2048493277662363895",
+          "likes": 15,
+          "retweets": 0,
+          "replies": 5,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Kurt Elster",
+      "handle": "kurtinc",
+      "bio": "CTO. MBA. The @Shopify expert your developer follows. \nConsultant, host of The Unofficial Shopify Podcast, app dev, & agency owner. Shopify Partner since 2011.",
+      "tweets": [
+        {
+          "id": "2049541725002011121",
+          "text": "a client just put me onto http://milled.com. it indexes every newsletter a brand sends, historically. 48 million emails across 100k+ brands. want to see what your competitor emailed last Black Friday? it's all there. competitive intel gold mine.",
+          "createdAt": "2026-04-29T17:30:00+00:00",
+          "url": "https://x.com/kurtinc/status/2049541725002011121",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049179084412891229",
+          "text": "You’d be amazed how creative customers get at removing add-on charges from personalized products. We learned this the hard way with Pins &amp; Aces. \nAfter trying too many product options apps, we settled on Easify Custom Product Options. So much better than the custom solution we'd https://t.co/PQ1x605x92",
+          "createdAt": "2026-04-28T17:29:00+00:00",
+          "url": "https://x.com/kurtinc/status/2049179084412891229",
+          "likes": 3,
+          "retweets": 0,
+          "replies": 1,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2048846765512601903",
+          "text": "Its been a year since Shopify Knowledge Base went live in the app store. Based on usage in that time, I'd say this agentic FAQ concept is DOA. Screenshots are from three 8-figure stores. Its just not used. https://t.co/PZmzpawL0Q",
+          "createdAt": "2026-04-27T19:28:29+00:00",
+          "url": "https://x.com/kurtinc/status/2048846765512601903",
+          "likes": 25,
+          "retweets": 1,
+          "replies": 9,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Matthew Bertulli",
+      "handle": "mbertulli",
+      "bio": "Founded 4 companies. 1 great exit -- Co-Host of Operators Podcast -- Just trying to be helpful.",
+      "tweets": [
+        {
+          "id": "2049524971047915772",
+          "text": "Product is my new favorite topic.\n\nGive this a listen!",
+          "createdAt": "2026-04-29T16:23:26+00:00",
+          "url": "https://x.com/mbertulli/status/2049524971047915772",
+          "likes": 9,
+          "retweets": 1,
+          "replies": 1,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049326391129489448",
+          "text": "Ted Lasso new season coming. \n\nJust jack it into my veins.",
+          "createdAt": "2026-04-29T03:14:20+00:00",
+          "url": "https://x.com/mbertulli/status/2049326391129489448",
+          "likes": 8,
+          "retweets": 0,
+          "replies": 1,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049227785051525515",
+          "text": "Anyone in DTC using Omnisend over Klaviyo?",
+          "createdAt": "2026-04-28T20:42:31+00:00",
+          "url": "https://x.com/mbertulli/status/2049227785051525515",
+          "likes": 37,
+          "retweets": 0,
+          "replies": 27,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "tobi lutke",
+      "handle": "tobi",
+      "bio": "Shopify CEO by day, Dad in evening, hacker at night, Aspiring comprehensivist. \n+ qmd !",
+      "tweets": [
+        {
+          "id": "2049685958602162410",
+          "text": "Of course video games generalize",
+          "createdAt": "2026-04-30T03:03:08+00:00",
+          "url": "https://x.com/tobi/status/2049685958602162410",
+          "likes": 489,
+          "retweets": 15,
+          "replies": 12,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2048729178661421061",
+          "text": "Well great. What’s the plan for making a profit then.",
+          "createdAt": "2026-04-27T11:41:14+00:00",
+          "url": "https://x.com/tobi/status/2048729178661421061",
+          "likes": 1433,
+          "retweets": 65,
+          "replies": 174,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2048198394091393284",
+          "text": "Entrepreneurs + Sidekick = More successful businesses  https://t.co/Q96INpUY20",
+          "createdAt": "2026-04-26T00:32:05+00:00",
+          "url": "https://x.com/tobi/status/2048198394091393284",
+          "likes": 492,
+          "retweets": 28,
+          "replies": 19,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Chris Lang",
+      "handle": "ChrisLangSocial",
+      "bio": "Top 1% Shopify 🏁 Share Your Story",
+      "tweets": [
+        {
+          "id": "2049511503989215268",
+          "text": "I'm working on it, honey https://t.co/bPS8o5leZ1",
+          "createdAt": "2026-04-29T15:29:55+00:00",
+          "url": "https://x.com/ChrisLangSocial/status/2049511503989215268",
+          "likes": 11,
+          "retweets": 0,
+          "replies": 4,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049488571447611817",
+          "text": "Dad, what is LinkedIn slop? https://t.co/QGdBQFo9bO",
+          "createdAt": "2026-04-29T13:58:47+00:00",
+          "url": "https://x.com/ChrisLangSocial/status/2049488571447611817",
+          "likes": 7,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2049291417403740412",
+          "text": "eeeee maybe I should offer video ad services to other DTC brands \n\nI’ve generated over $50m personally \n\nNow Johnny eating too 💰",
+          "createdAt": "2026-04-29T00:55:22+00:00",
+          "url": "https://x.com/ChrisLangSocial/status/2049291417403740412",
+          "likes": 4,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    }
+  ],
   "stats": {
-    "xBuilders": 0,
-    "totalTweets": 0
+    "xBuilders": 9,
+    "totalTweets": 27
   }
 }
