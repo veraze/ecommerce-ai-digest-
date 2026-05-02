@@ -518,19 +518,13 @@ async function fetchXContent(xAccounts, _bearerToken, state, errors) {
   }
 
   for (const item of raw) {
-    const newTweets = [];
-    for (const tweet of item.tweets || []) {
-      if (state.seenTweets[tweet.id]) continue;
-      state.seenTweets[tweet.id] = Date.now();
-      newTweets.push({ ...tweet, isQuote: false, quotedTweetId: null });
-    }
-    if (newTweets.length === 0) continue;
+    if (!item.tweets || item.tweets.length === 0) continue;
     results.push({
       source: "x",
       name: item.name,
       handle: item.handle,
       bio: item.bio ?? "",
-      tweets: newTweets,
+      tweets: item.tweets.map((t) => ({ ...t, isQuote: false, quotedTweetId: null })),
     });
   }
 
