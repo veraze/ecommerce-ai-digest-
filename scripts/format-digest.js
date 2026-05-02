@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 // format-digest.js — converts prepare-digest.js JSON output into readable digest text
 // No LLM required. Works reliably in cron.
-
-import { readFileSync } from 'fs';
+// Limits: max 5 tweets total (1 per builder, sorted by likes), max 2 podcasts.
 
 const chunks = [];
 for await (const chunk of process.stdin) chunks.push(chunk);
@@ -14,76 +13,76 @@ const lang = data.config?.language || 'en';
 const bilingual = lang === 'bilingual';
 const chinese = lang === 'zh';
 
-const today = new Date().toLocaleDateString('en-US', {
-  year: 'numeric', month: 'long', day: 'numeric'
+const today = new Date().toLocaleDateString('zh-CN', {
+  year: 'numeric', month: 'long', day: 'numeric',
+  timeZone: 'Asia/Shanghai',
 });
 
 const lines = [];
 
 // Header
-if (bilingual) {
-  lines.push(`AI × Commerce Digest — ${today}`);
-  lines.push(`AI × 电商每日简报 — ${today}`);
-} else if (chinese) {
-  lines.push(`AI × 电商每日简报 — ${today}`);
+if (bilingual || chinese) {
+  lines.push(`🤖 AI × 电商每日简报 — ${today}`);
 } else {
-  lines.push(`AI × Commerce Digest — ${today}`);
+  lines.push(`🤖 AI × Commerce Digest — ${today}`);
 }
 lines.push('');
 
 // ── X / Twitter ──────────────────────────────────────────────
+// Pick best tweet per builder, sort by likes, take top 5
 const xItems = data.x || [];
-if (xItems.length > 0) {
-  if (bilingual) lines.push('━━━ X / TWITTER ━━━');
-  else if (chinese) lines.push('━━━ X / 推特 ━━━');
+const topTweets = [];
+for (const builder of xItems) {
+  const tweets = builder.tweets || [];
+  if (tweets.length === 0) continue;
+  const best = tweets.reduce((a, b) => (b.likes || 0) > (a.likes || 0) ? b : a);
+  topTweets.push({ builder, tweet: best });
+}
+topTweets.sort((a, b) => (b.tweet.likes || 0) - (a.tweet.likes || 0));
+const selected = topTweets.slice(0, 5);
+
+if (selected.length > 0) {
+  if (bilingual || chinese) lines.push('━━━ X / 推特 ━━━');
   else lines.push('━━━ X / TWITTER ━━━');
   lines.push('');
 
-  for (const builder of xItems) {
+  for (const { builder, tweet } of selected) {
     const name = builder.name || builder.handle;
-    const bio = builder.bio || '';
-    const bioSnippet = bio.length > 80 ? bio.slice(0, 77) + '...' : bio;
+    const text = tweet.text || '';
+    const truncated = text.length > 300 ? text.slice(0, 297) + '...' : text;
 
-    lines.push(`${name}`);
-    if (bioSnippet) lines.push(`${bioSnippet}`);
+    lines.push(`📌 ${name} @${builder.handle}`);
     lines.push('');
-
-    for (const tweet of builder.tweets || []) {
-      const text = tweet.text || '';
-      const truncated = text.length > 280 ? text.slice(0, 277) + '...' : text;
-      lines.push(truncated);
-      lines.push(tweet.url);
-      lines.push('');
-    }
+    lines.push(truncated);
+    lines.push(tweet.url);
+    lines.push('');
   }
 }
 
-// ── Podcasts ──────────────────────────────────────────────────
-const podcasts = data.podcasts || [];
+// ── Podcasts / YouTube ────────────────────────────────────────
+const podcasts = (data.podcasts || []).slice(0, 2);
 if (podcasts.length > 0) {
-  if (bilingual) lines.push('━━━ PODCASTS ━━━');
-  else if (chinese) lines.push('━━━ 播客 ━━━');
-  else lines.push('━━━ PODCASTS ━━━');
+  if (bilingual || chinese) lines.push('━━━ 播客 / YouTube ━━━');
+  else lines.push('━━━ PODCASTS / YOUTUBE ━━━');
   lines.push('');
 
   for (const ep of podcasts) {
-    lines.push(`${ep.name} — "${ep.title}"`);
+    lines.push(`🎙 ${ep.name}`);
+    lines.push(`"${ep.title}"`);
     lines.push('');
-
-    // Extract a short excerpt from transcript (first ~400 chars of content)
     const transcript = ep.transcript || '';
     if (transcript) {
-      const excerpt = transcript.slice(0, 400).replace(/\s+/g, ' ').trim();
-      lines.push(excerpt + (transcript.length > 400 ? '...' : ''));
+      const excerpt = transcript.slice(0, 300).replace(/\s+/g, ' ').trim();
+      lines.push(excerpt + (transcript.length > 300 ? '...' : ''));
       lines.push('');
     }
-
     lines.push(ep.url);
     lines.push('');
   }
 }
 
 // Footer
-lines.push('Generated via ecommerce-ai-digest: https://github.com/veraze/ecommerce-ai-digest-');
+lines.push('—');
+lines.push('ecommerce-ai-digest: https://github.com/veraze/ecommerce-ai-digest-');
 
 process.stdout.write(lines.join('\n'));
