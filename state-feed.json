@@ -1,7 +1,6 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "106a53c9-d4bf-4534-a3f1-7a38339b46b1": 1777278047318,
     "substack:post:195677117": 1777364532110,
     "65d389a8-3765-11f1-a29e-cf3fbe697ce7": 1777364533111,
     "EpPuU9k6Ahg": 1777476273803,
@@ -15,7 +14,5 @@
     "9Rq868HPqJk": 1777708356445,
     "pCdg-F60clY": 1777866186571
   },
-  "seenArticles": {
-    "https://www.anthropic.com/engineering/claude-code-auto-mode": 1777278052826
-  }
+  "seenArticles": {}
 }
