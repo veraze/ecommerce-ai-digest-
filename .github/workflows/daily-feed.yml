@@ -30,21 +30,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: cd scripts && npm install
-
-      - name: Generate feeds (podcasts + blogs only — X fetched locally via residential IP)
-        env:
-          SUPADATA_API_KEY: ${{ secrets.SUPADATA_API_KEY }}
-        run: cd scripts && node generate-feed.js --podcasts-only
-
-      - name: Commit and push feeds
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add feed-podcasts.json feed-blogs.json state-feed.json
-          git diff --cached --quiet || git commit -m "chore: update feeds [skip ci]"
-          git push
+      - name: No-op (feeds are generated locally and pushed by the maintainer's machine)
+        run: echo "All feeds are fetched locally via residential IP and pushed to this repo. GitHub Actions is kept for CI purposes only."
 
       # Optional: push feeds to Cloudflare KV after commit
       # Uncomment once you have a Cloudflare Worker deployed
