@@ -1,8 +1,18 @@
 {
-  "generatedAt": "2026-05-05T08:20:06.388Z",
+  "generatedAt": "2026-05-06T03:09:31.904Z",
   "lookbackHours": 336,
-  "podcasts": [],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "Davie Fogarty",
+      "title": "Why TikTok Shop can beat Facebook",
+      "guid": "HMcTgsgIZG8",
+      "url": "https://www.youtube.com/watch?v=HMcTgsgIZG8",
+      "publishedAt": "2026-05-05T17:00:18+00:00",
+      "transcript": "What is the best marketing tactic to increase online sales for an apparel company? What apparel company? Healthcare apparel. I think it depends how medical you want to go down. So, if you really want to create a little bit more problem-solution based, I'd be using advertorials, listical formats that you can drive Facebook traffic to. If you wanted to do a little bit more fashion based {slash} just this looks better, I'd probably be using TikTok Shop. So, do you think more people purchase apparel companies on Facebook versus Instagram versus TikTok? >> I think a lot of it is the key of like understanding where your competitive landscape is, and are you differentiating through product? Are you differentiating through acquisition strategy? Like, one of my friend's brands, he's going to do 700 million this year. He's selling a hoodie. His name's Comfort Hoodies, and he had a similar products to other people in the market. He did differentiate through product like it's an amazing quality product and slightly weighted, but he's number one on TikTok Shops. And that's because nobody that was selling that product was on TikTok Shops. So, if you've got a huge competitor, which you do, that's dominating Facebook, they're just going to ramp the CPMs up. I'd try to innovate through a different channel. Do you believe in paying influencers to market, or do you believe in just giving free products to market? Both can work. It doesn't really matter. The problem with gifting product is it takes so long. Like, if you're not using TikTok Shops where you can basically use a tool and just click one send, it just takes too long to hit mass scale. So, you want to work with smaller creators that are on affiliate based structure, even if it's not using TikTok Shops. You can use Social Snowball, any of these apps, gift them product, then they'll just be their own destiny. They'll monetize posts a million times for you."
+    }
+  ],
   "stats": {
-    "podcastEpisodes": 0
+    "podcastEpisodes": 1
   }
 }
