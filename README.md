@@ -9,6 +9,10 @@ they're testing and learning.
 
 **Philosophy:**  Follow the people actually doing it, not talking about it.
 
+This skill is originated from @zarazhangrui's Follow Builder. As someone in e-commerce , I forked the project and built an AI summary tool tailored for the e-commerce niche.
+I have modified the followed accounts on X and YouTube. The original version adopts the official X API, while I developed a Python script based on @twscrape to fetch data via the cookies of X accounts.
+Feel free to raise any operational issues or optimization suggestions (though I may not have the technical capability to make revisions). Meanwhile, if you want to automate AI summaries for your own vertical niche, you can fork my project, apply for a free Supadata API key, and link it with your own X cookie. It is recommended to use a secondary account to avoid the risk of being banned.
+
 ## What You Get
 
 A daily or weekly digest delivered to your preferred messaging app (Telegram, email,
