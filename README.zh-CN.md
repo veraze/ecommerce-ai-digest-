@@ -6,6 +6,8 @@
 
 **理念：** 追踪那些真正在跑生意、做工具、分享真实数据的人，而非只会描述趋势却不动手的旁观者。
 
+声明：这个skill源来自@zarazhang的follow builder，作为电商人folk之后做了一个e-com领域的AI摘要，其中更改了X和youtube关注的人，以及原版用的是X 官方API，而我这里用的是基于@twscrape写了个python通过X 账号cookie来抓取。也欢迎大家提出运行中出现的问题和可以提升的地方（当然我不一定有这个技术能力改），同时大家如果想自动化自己垂直领域的AI摘要也可以folk我的并且申请一个supadata API （免费），关联自己的X cookie（建议小号，谨防被封风险）就好啦。
+
 ## 你会得到什么
 
 每日或每周推送到你常用的通讯工具（Telegram、邮件等），包含：
@@ -85,7 +87,7 @@ cd ~/.claude/skills/follow-builders/scripts && npm install
 
 ## 工作原理
 
-1. GitHub Actions 每天 UTC 早上 6 点自动运行，通过 Rettiwt（无需 API key）抓取推文，通过 Supadata 获取 YouTube 字幕
+1. agent 根据你设定的时间提前抓取账号的信息内容
 2. 生成的 feed 文件（`feed-x.json`、`feed-podcasts.json`）提交到本仓库
 3. 你的 agent 获取 feed——一次 HTTP 请求
 4. 你的 agent 根据你的偏好将原始内容重新混编为摘要
