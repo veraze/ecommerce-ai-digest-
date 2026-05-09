@@ -1,13 +1,16 @@
 {
-  "generatedAt": "2026-05-09T00:33:11.602Z",
+  "generatedAt": "2026-05-09T22:08:58.028Z",
   "lookbackHours": 336,
   "podcasts": [],
   "stats": {
     "podcastEpisodes": 0
   },
   "errors": [
-    "Podcast: Error fetching The Ecom Academy: The operation was aborted due to timeout",
-    "Podcast: Error fetching Davie Fogarty: The operation was aborted due to timeout",
-    "Podcast: Error fetching Daan Jonkman — AI for Shopify: The operation was aborted due to timeout"
+    "Podcast: Transcript error for \"He became a billionaire… but was it worth it?\": Supadata HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-",
+    "Podcast: Transcript error for \"Can I Save This Cycling Snack Business?\": Supadata HTTP 503: no available server\n",
+    "Podcast: Transcript error for \"Claude is not just a chatbot, it's a whole AI ecosystem   #Shopify #Claude #shorts\": Supadata HTTP 429: {\"error\":\"limit-exceeded\",\"message\":\"Limit Exceeded\",\"details\":\"Request rate limit on current plan was exceeded.\",\"documentationUrl\":\"https://supadata.ai/documentation/errors/limit-exceeded\"}",
+    "Podcast: Transcript error for \"You can now run your entire Shopify store inside of Clause using Shopify's AI Toolkit 🤯\": Supadata HTTP 503: no available server\n",
+    "Podcast: Transcript error for \"Claude Can Now Do EVERYTHING on Shopify\": Supadata HTTP 429: {\"error\":\"limit-exceeded\",\"message\":\"Limit Exceeded\",\"details\":\"Request rate limit on current plan was exceeded.\",\"documentationUrl\":\"https://supadata.ai/documentation/errors/limit-exceeded\"}",
+    "Podcast: Transcript error for \"I Created 50 Meta Ads From 1 Photo Using Claude + Shopify (Insane Result)\": Supadata HTTP 429: {\"error\":\"limit-exceeded\",\"message\":\"Limit Exceeded\",\"details\":\"Request rate limit on current plan was exceeded.\",\"documentationUrl\":\"https://supadata.ai/documentation/errors/limit-exceeded\"}"
   ]
 }
