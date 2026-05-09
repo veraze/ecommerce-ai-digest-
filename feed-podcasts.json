@@ -1,18 +1,13 @@
 {
-  "generatedAt": "2026-05-07T22:07:39.225Z",
+  "generatedAt": "2026-05-09T00:33:11.602Z",
   "lookbackHours": 336,
-  "podcasts": [
-    {
-      "source": "podcast",
-      "name": "Davie Fogarty",
-      "title": "The fastest way to get customer reviews",
-      "guid": "GNlMebtZWpU",
-      "url": "https://www.youtube.com/watch?v=GNlMebtZWpU",
-      "publishedAt": "2026-05-07T12:00:35+00:00",
-      "transcript": "We get a lot of customers. How do we get them to post reviews on our website? Cuz we need social proof. And right now, we reach out to people, we give them discount codes. We don't have the social proof to get that. There's a few ways. Some are more gray hat than others. The first one is you can say you can go in the drawer to get your product free if you leave a review. And then people go into the ballot. Once they leave the five star, everyone leaves it and then they get that. At the same time, you just want to make sure your email flows are just like tailored into it. If you're just getting started, which sounds like you guys are a little bit further along than that, just call them. Just literally say like, \"Is there anything we could do?\" Chances are they'll leave your review and they'll purchase again from you. >> Regarding email marketing, what is the best tactics as far as the frequency of emails going out? >> It really depends on your brand values. For us, we're quite aggressive with emails. We'll send as much as we can trying to balance the churn rate while maximizing revenue. For someone that's really trying to be a stylish, beautiful brand, spamming people doesn't align with your brand value. So you need to play the longer game. You need to know that a dollar today means less in 4 years simply because of brand. So there's no perfect ratio. What I would do is I would make sure my forecasts aren't too aggressive so that I have to start spamming emails and then make the conscious choice."
-    }
-  ],
+  "podcasts": [],
   "stats": {
-    "podcastEpisodes": 1
-  }
+    "podcastEpisodes": 0
+  },
+  "errors": [
+    "Podcast: Error fetching The Ecom Academy: The operation was aborted due to timeout",
+    "Podcast: Error fetching Davie Fogarty: The operation was aborted due to timeout",
+    "Podcast: Error fetching Daan Jonkman — AI for Shopify: The operation was aborted due to timeout"
+  ]
 }
