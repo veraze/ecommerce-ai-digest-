@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T22:08:47.489Z",
+  "generatedAt": "2026-05-10T22:10:24.419Z",
   "lookbackHours": 720,
   "x": [
     {
@@ -9,13 +9,24 @@
       "bio": "$1,000,000,000 in Shopify ecommerce sales. 700k YouTube Subscribers. Judge on Shark Tank. 1:1 mentoring 👇🏼",
       "tweets": [
         {
+          "id": "2053499128190013513",
+          "text": "The anti-dropshipping playbook for ecom founders who actually want to scale past $5M: https://t.co/wyOhsElXki",
+          "createdAt": "2026-05-10T15:35:18+00:00",
+          "url": "https://x.com/daviefogarty/status/2053499128190013513",
+          "likes": 66,
+          "retweets": 6,
+          "replies": 4,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
           "id": "2053184589556826132",
           "text": "If I had to take a Shopify store from $500K to $2M without increasing your % spent on ads, here's exactly what I'd do:\n\n1. STOP OBSESSING OVER TRAFFIC.\n\nBrands pump money into ads and chase new channels. But if your site doesn't convert, you're pouring more water into a bucket",
           "createdAt": "2026-05-09T18:45:27+00:00",
           "url": "https://x.com/daviefogarty/status/2053184589556826132",
-          "likes": 34,
-          "retweets": 2,
-          "replies": 1,
+          "likes": 142,
+          "retweets": 3,
+          "replies": 6,
           "isQuote": false,
           "quotedTweetId": null
         },
@@ -24,20 +35,9 @@
           "text": "How to engineer your first $10M in ecom: https://t.co/cHYUf3JM5t",
           "createdAt": "2026-05-08T17:23:52+00:00",
           "url": "https://x.com/daviefogarty/status/2052801672234053632",
-          "likes": 155,
-          "retweets": 13,
+          "likes": 198,
+          "retweets": 14,
           "replies": 5,
-          "isQuote": false,
-          "quotedTweetId": null
-        },
-        {
-          "id": "2051717513159815616",
-          "text": "“Working hard” is the wrong frame.\n\nReal work is making decisions that hurt your soul but save your business.\n\nHere's what every level actually cost me: https://t.co/5jQuU2E9Eo",
-          "createdAt": "2026-05-05T17:35:48+00:00",
-          "url": "https://x.com/daviefogarty/status/2051717513159815616",
-          "likes": 74,
-          "retweets": 3,
-          "replies": 14,
           "isQuote": false,
           "quotedTweetId": null
         }
@@ -50,33 +50,33 @@
       "bio": "Tabs Chocolate (Exited) || Now building https://t.co/kO22YD6KLx → we hunt & kill copycats & counterfeits | Book a call below 👇",
       "tweets": [
         {
-          "id": "2053203401249525858",
-          "text": "90% of the time, it's not Meta's fault.\n\nIt's urs:\n&gt; Ur hook is weak and people scroll past in 0.3 seconds\n&gt; Landing page loads in 8 seconds (they bounced at 3)\n&gt; PDP looks dropshipped with stolen product photos\n&gt; Checkout flow has 6 steps and asks for their blood type\n\nBrother,",
-          "createdAt": "2026-05-09T20:00:12+00:00",
-          "url": "https://x.com/oliverbrocato/status/2053203401249525858",
-          "likes": 1,
-          "retweets": 0,
+          "id": "2053564742212661436",
+          "text": "People think networking is:\n&gt; Going to events\n&gt; Collecting contacts\n&gt; Adding people on LinkedIn\n\nReal networking is:\n&gt; Being useful enough that the right people wanna keep u around.\n\nMake intros. Share insights. Solve problems. Show up when it's not convenient.\n\nDo that and ur",
+          "createdAt": "2026-05-10T19:56:02+00:00",
+          "url": "https://x.com/oliverbrocato/status/2053564742212661436",
+          "likes": 8,
+          "retweets": 1,
+          "replies": 1,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2053521208260608075",
+          "text": "Ur TL makes entrepreneurship look nicer than it actually is.\n\nMost of it is honestly:\n\nUncomfortable conversations with team members who aren't cutting it.\nFixing mistakes u made 6 months ago that are biting u now.\nSolving weird problems like \"why did Stripe flag our account?\"",
+          "createdAt": "2026-05-10T17:03:03+00:00",
+          "url": "https://x.com/oliverbrocato/status/2053521208260608075",
+          "likes": 10,
+          "retweets": 1,
           "replies": 0,
           "isQuote": false,
           "quotedTweetId": null
         },
         {
-          "id": "2053158822559306028",
-          "text": "People will panic over a 2.1 ROAS.\n\nThen ignore the fact their:\n\n1/ CVR is up 18%\n2/ AOV increased $14\n3/ Returning customer rate doubled\n\nU know what a 2.1 ROAS with those numbers means?\n\nUr building an actual brand with real retention.\n\nNot just burning cash on one-time buyers",
-          "createdAt": "2026-05-09T17:03:03+00:00",
-          "url": "https://x.com/oliverbrocato/status/2053158822559306028",
-          "likes": 5,
-          "retweets": 0,
-          "replies": 0,
-          "isQuote": false,
-          "quotedTweetId": null
-        },
-        {
-          "id": "2053112012109136185",
-          "text": "A lot of founders think their business has a sales problem.\n\nWhen in reality, they have an expectation problem.\n\nThey overpromise.\nUnder-explain.\nDon't educate the client properly.\n\nThen act surprised when people are frustrated later.\n\nU told them \"we'll handle everything\" but",
-          "createdAt": "2026-05-09T13:57:03+00:00",
-          "url": "https://x.com/oliverbrocato/status/2053112012109136185",
-          "likes": 4,
+          "id": "2053475657498481106",
+          "text": "One of the weirdest parts about becoming successful young is watching people slowly change how they treat u.\n\nSame personality. Same humor. Same opinions.\n\nBut suddenly:\n\nPeople start listening closer. Reply faster. Take u more seriously. Want to network.\n\nAnd u realize:\n\nAlmost",
+          "createdAt": "2026-05-10T14:02:03+00:00",
+          "url": "https://x.com/oliverbrocato/status/2053475657498481106",
+          "likes": 17,
           "retweets": 0,
           "replies": 1,
           "isQuote": false,
@@ -95,9 +95,9 @@
           "text": "Claude + Pinterest = AI Content Factory\n\nWe built a fully automated system that repurposes, localizes, and launches winning TikTok Shop content across hundreds of creator-style accounts.\n\nIt’s so effective it feels like running Facebook ads in 2008. \n\n- CPMs as low as $0.10\n- no https://t.co/uB5OYB0Jdn",
           "createdAt": "2026-05-09T15:05:16+00:00",
           "url": "https://x.com/maverickecom/status/2053129178677973265",
-          "likes": 81,
-          "retweets": 11,
-          "replies": 26,
+          "likes": 378,
+          "retweets": 70,
+          "replies": 154,
           "isQuote": false,
           "quotedTweetId": null
         },
@@ -106,9 +106,9 @@
           "text": "http://x.com/i/article/2052906713490087940",
           "createdAt": "2026-05-09T00:31:09+00:00",
           "url": "https://x.com/maverickecom/status/2052909200309735625",
-          "likes": 118,
-          "retweets": 3,
-          "replies": 2,
+          "likes": 240,
+          "retweets": 14,
+          "replies": 3,
           "isQuote": false,
           "quotedTweetId": null
         },
@@ -117,7 +117,7 @@
           "text": "Claude Code + Maverick + Arcads + Pinterest = $500k ecom launch\n\nNo wasting time. No shoots. No fluff.\n\nHere's the exact workflow we are quietly using right now 👇\n\nStep 1 — Claude writes your scripts\n\nPaste in your product URL + competitor videos from Cruva social 1.\n\nClaude https://t.co/22u2c5aRQB",
           "createdAt": "2026-05-08T16:56:14+00:00",
           "url": "https://x.com/maverickecom/status/2052794718317056388",
-          "likes": 199,
+          "likes": 202,
           "retweets": 21,
           "replies": 37,
           "isQuote": false,
@@ -173,11 +173,22 @@
       "bio": "Saving businesses from ad agencies and junior talent 1 Unicorn Marketer at a time. Click link to get matched with a Unicorn Marketer today!",
       "tweets": [
         {
+          "id": "2053495748348534805",
+          "text": "Too many brands are hyper critical of what their ads look like when they should be much more critical of what their ads say and how they say it.\n\nEvery day I see brands with beautiful looking ads, but the most generic/vanilla copy, angles and voice that might as well be from a",
+          "createdAt": "2026-05-10T15:21:53+00:00",
+          "url": "https://x.com/maxwellfinn/status/2053495748348534805",
+          "likes": 2,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
           "id": "2052859477519372627",
           "text": "New ad we just launched made entirely in Claude code with a motion video skill I built that combines the best elements from HyperFrames and Remotion. \n\nBasically took our top performing static and reimagined it in a totally different format while keeping the core elements the https://t.co/t6Jll3hs7z",
           "createdAt": "2026-05-08T21:13:34+00:00",
           "url": "https://x.com/maxwellfinn/status/2052859477519372627",
-          "likes": 23,
+          "likes": 24,
           "retweets": 0,
           "replies": 5,
           "isQuote": false,
@@ -191,17 +202,6 @@
           "likes": 36,
           "retweets": 2,
           "replies": 1,
-          "isQuote": false,
-          "quotedTweetId": null
-        },
-        {
-          "id": "2051784130409504854",
-          "text": "ChatGPT self serve ad platform is officially live. \n\nThe only 3 reviews on the landing page are from Best Buy, Lowe's and VistaPrint and are very fluffy with no mention of revenue or conversion related metrics.\n\nWill be interested to see what the results look like for non Fortune",
-          "createdAt": "2026-05-05T22:00:31+00:00",
-          "url": "https://x.com/maxwellfinn/status/2051784130409504854",
-          "likes": 11,
-          "retweets": 2,
-          "replies": 3,
           "isQuote": false,
           "quotedTweetId": null
         }
@@ -296,23 +296,12 @@
       "bio": "Shopify CEO by day, Dad in evening, hacker at night, Aspiring comprehensivist. \n+ qmd !",
       "tweets": [
         {
-          "id": "2053121182044451016",
-          "text": "http://x.com/i/article/2052738533111013380",
-          "createdAt": "2026-05-09T14:33:29+00:00",
-          "url": "https://x.com/tobi/status/2053121182044451016",
-          "likes": 903,
-          "retweets": 107,
-          "replies": 53,
-          "isQuote": false,
-          "quotedTweetId": null
-        },
-        {
           "id": "2052714349471338867",
           "text": "“This level of economic ignorance from an elected official who legislates on the economy should make us howl in outrage.”",
           "createdAt": "2026-05-08T11:36:53+00:00",
           "url": "https://x.com/tobi/status/2052714349471338867",
-          "likes": 1365,
-          "retweets": 104,
+          "likes": 1377,
+          "retweets": 105,
           "replies": 54,
           "isQuote": false,
           "quotedTweetId": null
@@ -324,7 +313,7 @@
           "url": "https://x.com/tobi/status/2052439738062123152",
           "likes": 215,
           "retweets": 5,
-          "replies": 13,
+          "replies": 14,
           "isQuote": false,
           "quotedTweetId": null
         }
@@ -374,6 +363,6 @@
   ],
   "stats": {
     "xBuilders": 9,
-    "totalTweets": 27
+    "totalTweets": 26
   }
 }
