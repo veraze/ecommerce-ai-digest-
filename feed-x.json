@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T22:00:33.694Z",
+  "generatedAt": "2026-05-13T22:00:30.633Z",
   "lookbackHours": 720,
   "x": [
     {
@@ -8,6 +8,17 @@
       "handle": "daviefogarty",
       "bio": "$1,000,000,000 in Shopify ecommerce sales. 700k YouTube Subscribers. Judge on Shark Tank. 1:1 mentoring 👇🏼",
       "tweets": [
+        {
+          "id": "2054623399142396342",
+          "text": "How to build a profitable ecommerce brand using AI from zero (I tested this myself and got my first sale 1 hour after launching ads):\n\n1. Find a product you're passionate about/know a little something about. Chances are you already know the avatar you're trying to sell to. \n\n2.",
+          "createdAt": "2026-05-13T18:02:46+00:00",
+          "url": "https://x.com/daviefogarty/status/2054623399142396342",
+          "likes": 39,
+          "retweets": 4,
+          "replies": 7,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
         {
           "id": "2053499128190013513",
           "text": "The anti-dropshipping playbook for ecom founders who actually want to scale past $5M: https://t.co/wyOhsElXki",
@@ -29,17 +40,6 @@
           "replies": 15,
           "isQuote": false,
           "quotedTweetId": null
-        },
-        {
-          "id": "2052801672234053632",
-          "text": "How to engineer your first $10M in ecom: https://t.co/cHYUf3JM5t",
-          "createdAt": "2026-05-08T17:23:52+00:00",
-          "url": "https://x.com/daviefogarty/status/2052801672234053632",
-          "likes": 199,
-          "retweets": 14,
-          "replies": 5,
-          "isQuote": false,
-          "quotedTweetId": null
         }
       ]
     },
@@ -50,35 +50,35 @@
       "bio": "Tabs Chocolate (Exited) || Now building @Bustem__ → we hunt & kill copycats & counterfeits | Book a call below 👇",
       "tweets": [
         {
-          "id": "2054290021386219792",
-          "text": "Everyone wants high LTV.\n\nNobody wants to build a product ppl actually come back for.\n\nUr retention isn’t low because of email.\n\nIt’s low because:\n\n&gt; Product = one-time novelty\n&gt; Expectations ≠ reality\n&gt; No reason to return\n\nKlaviyo isn’t saving u bro.",
-          "createdAt": "2026-05-12T19:58:02+00:00",
-          "url": "https://x.com/oliverbrocato/status/2054290021386219792",
-          "likes": 4,
+          "id": "2054651904903508044",
+          "text": "If ur creatives last more than 2 weeks, ur not scaling hard enough.\n\nReal scale looks like:\n&gt; CTR dying daily\n&gt; CPM creeping up\n&gt; Comments getting weird\n\nIt means ur saturating the audience.\n\nGOOD.\n\nThat's how u know it's time to kill it and ship the next one.",
+          "createdAt": "2026-05-13T19:56:02+00:00",
+          "url": "https://x.com/oliverbrocato/status/2054651904903508044",
+          "likes": 1,
           "retweets": 0,
           "replies": 0,
           "isQuote": false,
           "quotedTweetId": null
         },
         {
-          "id": "2054244721049190710",
-          "text": "U don’t lack confidence.\n\nU lack data.\n\nFirst time scaling spend = scary\nFirst time hitting $10k day = surreal\n\nSecond time?\n\nBoring.\n\nConfidence is just repeated proof.",
-          "createdAt": "2026-05-12T16:58:02+00:00",
-          "url": "https://x.com/oliverbrocato/status/2054244721049190710",
-          "likes": 13,
+          "id": "2054607987239702758",
+          "text": "It's always \"f*ck AI\" until u need 20 new creatives by tomorrow.\n\nThen suddenly ChatGPT is ur:\n&gt; Copywriter\n&gt; Creative director\n&gt; Strategist\n&gt; Lovesick boyfriend\n\nAlways some bs until the deadlines hits.",
+          "createdAt": "2026-05-13T17:01:31+00:00",
+          "url": "https://x.com/oliverbrocato/status/2054607987239702758",
+          "likes": 7,
           "retweets": 0,
-          "replies": 4,
+          "replies": 1,
           "isQuote": false,
           "quotedTweetId": null
         },
         {
-          "id": "2054200942065860650",
-          "text": "100k/month in ecom means ur poor.\n\n1/ $60k Meta\n2/ $25k COGS\n3/ $12k team\n4/ $6k refunds, apps, random bs\n\nU clear like… nothing.\n\nBut congrats.\n\nU bought urself a full-time headache.",
-          "createdAt": "2026-05-12T14:04:04+00:00",
-          "url": "https://x.com/oliverbrocato/status/2054200942065860650",
-          "likes": 101,
-          "retweets": 1,
-          "replies": 32,
+          "id": "2054562069794742300",
+          "text": "Uncomfortable truth:\n\nAny problem u can solve with money isn't really a problem.\n\nBad supplier? Pay more.\nSlow shipping? Pay for air freight.\nWeak creative? Hire better.\n\nIf ur cashflow is strong, most things disappear.\n\nThe real problems are the ones money can't fix.",
+          "createdAt": "2026-05-13T13:59:04+00:00",
+          "url": "https://x.com/oliverbrocato/status/2054562069794742300",
+          "likes": 6,
+          "retweets": 0,
+          "replies": 2,
           "isQuote": false,
           "quotedTweetId": null
         }
@@ -91,35 +91,35 @@
       "bio": "I scale 8 figure ecommerce brands with human & AI UGC systems | 1B+ Views, $1M+ Generated, 39K+ Creators Community | Apply to work with me 👇",
       "tweets": [
         {
-          "id": "2054281825871118617",
-          "text": "I’m preparing for an AMA where I’ll be answering your questions. Looking forward to exchanging insights about brand scaling at my agency and Ai UGC. Let’s connect—ask your questions! https://t.co/RZJVuk0O1l",
-          "createdAt": "2026-05-12T19:25:28+00:00",
-          "url": "https://x.com/maverickecom/status/2054281825871118617",
-          "likes": 4,
+          "id": "2054592431933321597",
+          "text": "Most ecom brands are still paying agencies $4K/month for 30 ad creatives.\n\nI have built a workflow that can generate up to 550 videos per day for an ecom brand\n\nIt's generating UGC avatar videos the entire day and posting them onto creator-style accounts \n\nSame audience. Same https://t.co/mh3q1ZKT0n",
+          "createdAt": "2026-05-13T15:59:42+00:00",
+          "url": "https://x.com/maverickecom/status/2054592431933321597",
+          "likes": 3,
           "retweets": 0,
-          "replies": 1,
+          "replies": 0,
           "isQuote": false,
           "quotedTweetId": null
         },
         {
-          "id": "2054244236724232448",
-          "text": "This video is 100% AI\n\nFully realistic ads, natural creator motion, good aesthetics, seamless product integration, powered by AI.\n\n- UGC cost: $3\n- Production time: 15 minutes\n- Scale: instant\n\nOne AI engine that creates, tests, and scales short-form ads automatically — nonstop. https://t.co/DP6XETuwoY",
-          "createdAt": "2026-05-12T16:56:06+00:00",
-          "url": "https://x.com/maverickecom/status/2054244236724232448",
-          "likes": 12,
-          "retweets": 1,
-          "replies": 6,
+          "id": "2054584568661819527",
+          "text": "http://x.com/i/article/2054583975310483456",
+          "createdAt": "2026-05-13T15:28:28+00:00",
+          "url": "https://x.com/maverickecom/status/2054584568661819527",
+          "likes": 26,
+          "retweets": 2,
+          "replies": 0,
           "isQuote": false,
           "quotedTweetId": null
         },
         {
-          "id": "2054241199637025205",
-          "text": "Life after setting up ai systems for your ecom brand https://t.co/LZdR67jtRd",
-          "createdAt": "2026-05-12T16:44:02+00:00",
-          "url": "https://x.com/maverickecom/status/2054241199637025205",
-          "likes": 9,
-          "retweets": 0,
-          "replies": 3,
+          "id": "2054583211003375855",
+          "text": "Claude = 550 videos/day\n\nFully realistic UGC ads — cinematic lighting, natural human motion, clean pacing — powered by AI agents.\n\nBest way to implement ai Ugc into your ecom brand right now. \n\nWe’re currently doing this for ecom brands to scale sales on Amazon and tiktok shop by https://t.co/HHQNY9w4FJ",
+          "createdAt": "2026-05-13T15:23:04+00:00",
+          "url": "https://x.com/maverickecom/status/2054583211003375855",
+          "likes": 58,
+          "retweets": 26,
+          "replies": 51,
           "isQuote": false,
           "quotedTweetId": null
         }
@@ -173,11 +173,22 @@
       "bio": "Saving businesses from ad agencies and junior talent 1 Unicorn Marketer at a time. Click link to get matched with a Unicorn Marketer today!",
       "tweets": [
         {
+          "id": "2054575246489878963",
+          "text": "I wish every business owner who spends money on ads had this printed out and hanging above their desk. \n\nThere are so many variables outside of both the advertiser and platforms hands when it comes to performance.",
+          "createdAt": "2026-05-13T14:51:25+00:00",
+          "url": "https://x.com/maxwellfinn/status/2054575246489878963",
+          "likes": 7,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
           "id": "2054223824036487205",
           "text": "Every single time we tell a prospect that it's not a good fit and we can't take them on as a client they try incredibly hard to sell us on why they would be a great client.\n\nIt's like clock work.\n\nMost times we don't take them on because we were honest in saying it is not a great",
           "createdAt": "2026-05-12T15:34:59+00:00",
           "url": "https://x.com/maxwellfinn/status/2054223824036487205",
-          "likes": 2,
+          "likes": 3,
           "retweets": 0,
           "replies": 1,
           "isQuote": false,
@@ -193,17 +204,6 @@
           "replies": 0,
           "isQuote": false,
           "quotedTweetId": null
-        },
-        {
-          "id": "2052859477519372627",
-          "text": "New ad we just launched made entirely in Claude code with a motion video skill I built that combines the best elements from HyperFrames and Remotion. \n\nBasically took our top performing static and reimagined it in a totally different format while keeping the core elements the https://t.co/t6Jll3hs7z",
-          "createdAt": "2026-05-08T21:13:34+00:00",
-          "url": "https://x.com/maxwellfinn/status/2052859477519372627",
-          "likes": 24,
-          "retweets": 0,
-          "replies": 5,
-          "isQuote": false,
-          "quotedTweetId": null
         }
       ]
     },
@@ -214,13 +214,24 @@
       "bio": "CTO. MBA. The @Shopify expert your developer follows. \nConsultant, host of The Unofficial Shopify Podcast, app dev, & agency owner. Shopify Partner since 2011.",
       "tweets": [
         {
+          "id": "2054570893129474428",
+          "text": "Did Meta tank or did you?\n\nI met these guys at a conference in Nashville that built a nifty tool that's like a weather report for Meta ads.\n\n&gt; Headwinds pools data across ~50 DTC brands daily so when your numbers crater you can tell whether it's the platform or it's you. https://t.co/I41BmBtYr8",
+          "createdAt": "2026-05-13T14:34:07+00:00",
+          "url": "https://x.com/kurtinc/status/2054570893129474428",
+          "likes": 9,
+          "retweets": 1,
+          "replies": 3,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
           "id": "2054212500506452017",
           "text": "Agentic Storefronts dashboard is live in your Shopify Admin as a Sales Channel.\n\nOn a store we work with: ChatGPT is 0.27% of revenue, +42% MoM.\n\nIt's a small slice with a steep curve. The right approach here is \"monitor monthly\" not \"overhaul everything.\" https://t.co/5sqOOf7yhg",
           "createdAt": "2026-05-12T14:50:00+00:00",
           "url": "https://x.com/kurtinc/status/2054212500506452017",
-          "likes": 15,
-          "retweets": 2,
-          "replies": 5,
+          "likes": 26,
+          "retweets": 3,
+          "replies": 6,
           "isQuote": false,
           "quotedTweetId": null
         },
@@ -229,20 +240,9 @@
           "text": "Agentic Commerce on a real store:\n\n$39,015 total sales attributed to ChatGPT\nor 0.2% of store revenue for the same period.  \n\nYes, AI makes sales... but it's also still a rounding error. Both can be true. https://t.co/xubN6B0T4r",
           "createdAt": "2026-05-11T20:41:45+00:00",
           "url": "https://x.com/kurtinc/status/2053938633019645978",
-          "likes": 12,
+          "likes": 14,
           "retweets": 2,
-          "replies": 5,
-          "isQuote": false,
-          "quotedTweetId": null
-        },
-        {
-          "id": "2053841808115761513",
-          "text": "Looks like @Shopify has added official llms.txt support. No more hacky workarounds. \nYou can override it with a `llms.txt.liquid` file, similar to how robots.txt works now. \n\nExample: @AdamsPolishes  \nHat tip: @IlanaDavis https://t.co/MGH35fddba",
-          "createdAt": "2026-05-11T14:17:00+00:00",
-          "url": "https://x.com/kurtinc/status/2053841808115761513",
-          "likes": 42,
-          "retweets": 2,
-          "replies": 8,
+          "replies": 6,
           "isQuote": false,
           "quotedTweetId": null
         }
@@ -300,9 +300,9 @@
           "text": "AI-referred shoppers convert better and spend more: What Shopify's early data shows https://www.shopify.com/enterprise/blog/ai-search-insights",
           "createdAt": "2026-05-12T20:03:08+00:00",
           "url": "https://x.com/tobi/status/2054291305790849334",
-          "likes": 113,
-          "retweets": 5,
-          "replies": 13,
+          "likes": 201,
+          "retweets": 12,
+          "replies": 22,
           "isQuote": false,
           "quotedTweetId": null
         },
@@ -311,9 +311,9 @@
           "text": "Need more entrepreneurs",
           "createdAt": "2026-05-11T22:16:53+00:00",
           "url": "https://x.com/tobi/status/2053962576610935274",
-          "likes": 720,
-          "retweets": 30,
-          "replies": 43,
+          "likes": 740,
+          "retweets": 31,
+          "replies": 46,
           "isQuote": false,
           "quotedTweetId": null
         },
@@ -322,8 +322,8 @@
           "text": "“This level of economic ignorance from an elected official who legislates on the economy should make us howl in outrage.”",
           "createdAt": "2026-05-08T11:36:53+00:00",
           "url": "https://x.com/tobi/status/2052714349471338867",
-          "likes": 1376,
-          "retweets": 105,
+          "likes": 1374,
+          "retweets": 104,
           "replies": 54,
           "isQuote": false,
           "quotedTweetId": null
