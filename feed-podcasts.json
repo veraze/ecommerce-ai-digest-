@@ -1,21 +1,18 @@
 {
-  "generatedAt": "2026-05-13T22:00:58.356Z",
+  "generatedAt": "2026-05-14T22:15:16.827Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Davie Fogarty",
-      "title": "This stranger already owned her product",
-      "guid": "pmd6k2dcfEI",
-      "url": "https://www.youtube.com/watch?v=pmd6k2dcfEI",
-      "publishedAt": "2026-05-13T13:01:33+00:00",
-      "transcript": "See you in a minute. You can do it. I'm so nervous for it. [laughter] I hate doing this stuff. >> Oh, through the big puddles. >> If you turn around, you can get this guy coming the other way. >> Yep, I see him. >> You can do it. You can [laughter] do it. Go go go go. >> Good morning. >> How are you? >> Just scoffed and kept riding. >> You got to say, can I just ask you a quick question? You can't say hello, good morning, cuz that's just the greeting. Everyone's going to say, \"Hello, good morning.\" Just keep going. >> It feels weird to do it any other way. >> I know. I know. It's uncomfortable, but that's why it's going to work. [laughter] >> Your natural thing is to say hello. You can't say hello. Remove that from your vocabulary. >> Oh crap. Oh crap. Hey, can I ask you a question? >> I found one. That's good. Hang on. Round. Hey, can I ask you a question? >> Okay. >> Have you heard of um Snacket before? >> I own a Snacket. >> You own a Snacket. You do. >> You're a customer. [laughter] That's awesome. What do you put in your Snacket? I like to put some little uh jelly lollies or cut a few snakes out and just put a little bit of sugar in there so they don't all stick together. >> Oh yeah, that's my two. >> That's a That's a good hack. >> So give her a free snack and say you're the founder. >> Well, I'm I'm the founder of Snacket. I'm Carla. This is the Aqua version. >> That was great. >> Winning. >> Did you click record? >> Wait, does the blue light mean [laughter] No. Yeah, it's definitely recording. It's been flashing the whole time."
+      "title": "AI can show you why you’re losing money",
+      "guid": "xIyskkXkwps",
+      "url": "https://www.youtube.com/watch?v=xIyskkXkwps",
+      "publishedAt": "2026-05-13T09:30:36+00:00",
+      "transcript": "My biggest months are my biggest losses. >> Yeah. Holy crap. So, it's pretty common for businesses at your size to be a little bit confused about their financials. It's like, I should be profitable this month. I should be profitable that month. I remember when I was starting businesses was the exact same. The good news is AI can just create a complete CFO, a complete accountant for us and create what I call an interactive P&L. So, what that looks like is this. So, an interactive P&L stands for interactive profit and loss, which shows how much money we're bringing in and then how much profit we're making every single month. What makes it interactive, which is where all of these businesses fail, is that they fail to split out every single little cost that they have so that as a small business, they can see this expense is going to cause me issues. How much revenue do I need to actually increase? And then you can play around with it and be like, this is now actually my goal to grow the business. we need to increase revenue to a certain amount. So we can come into here and we can see February at this amount of revenue is going to lead to a loss of about $3,000. So what if we manage to get those sales up to $20,000? Then suddenly we can see we're only losing $390. Now here's the interesting thing as well. When we start cutting costs, we can actually see that we're finally into a profitable position. So, at the moment, we're about six or seven units a day that you're shipping. To get it to 20,000, we probably need to be doing more around 20 22 units a day to get you that. So, we need to get sales up, but we also need to cut costs. Now, as a very small business and you're doing so much as a founder, it's very hard to know what costs to cut or if there is any costs. For this one, the only cost that I can actually see is your agency. I understand why you want agencies as a small founder because you're like, I don't know how to do this thing. But the truth is, as a small founder, you need to be able to do every single part of the business because they are things that you'll need to teach people eventually and hold them accountable for it. If we remove this agency cost and we get up to over 20 sales a day, >> yeah, >> we can start making about $3,000 a month. If we can get it to even higher than that, let's say we can get it to 40,000 at those ratios, you can see suddenly we're now actually replacing our bit small salary. But that being said, you can actually live off this money. Yeah."
     }
   ],
   "stats": {
     "podcastEpisodes": 1
-  },
-  "errors": [
-    "Podcast: Transcript error for \"You Can Now Create Images and Videos in Claude with Higgsfield MCP\": Supadata HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-"
-  ]
+  }
 }
