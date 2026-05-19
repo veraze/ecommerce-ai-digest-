@@ -1,21 +1,18 @@
 {
-  "generatedAt": "2026-05-19T01:13:01.057Z",
+  "generatedAt": "2026-05-19T22:01:02.845Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Davie Fogarty",
-      "title": "This invention made $250K… then stalled",
-      "guid": "vxUxneNUOSo",
-      "url": "https://www.youtube.com/watch?v=vxUxneNUOSo",
-      "publishedAt": "2026-05-16T03:00:53+00:00",
-      "transcript": "This plastic invention has done quarter of a million dollars in sales, but growth has completely stopped. >> I'm not going to lie that it's a bit soul destroying to know that we're just going backwards. >> What's terrifying is the founder has invested so much money in the business. >> We're about $300,000 in. >> My biggest monks are my biggest losses. >> But lucky, I have a plan. I think I can grow this business with AI. >> It feels weird to do it any other way. >> I know. I know it's uncomfortable, but that's why it's going to work. Have you heard of um Snacket before? >> I own a Snacket. >> So, I've been doing nothing but editing for the past few days. Sales are improving since we chatted in February, which is good. really got to rescue this"
+      "title": "Why Most People Never Become Who They Want to Be",
+      "guid": "9kzCkNedGVw",
+      "url": "https://www.youtube.com/watch?v=9kzCkNedGVw",
+      "publishedAt": "2026-05-19T17:00:20+00:00",
+      "transcript": "At the end of the day, we are what we continually do. Our thoughts impact our beliefs, which impact our actions. This will then change our identity. Let's say you want to be a writer. Eventually, you'll stop thinking, \"I'm bad at writing.\" You'll start thinking, \"I am a writer, so I can do this.\" Let's say you're struggling to put down the vape, the cigarette, you'll say, \"I'm not a smoker.\" This self-identity will get reinforced through beliefs and through actions over time. But, here's the key. Generally, the old you will always creep back in. There will always be behavioral, environmental things, or deep down subconscious things that will constantly push you back to your old habits. >> [music] >> And you just need to constantly remind yourself and push through. The truth is, it's very easy to get whatever you want. All you need to do is be willing to struggle through the friction. Now, the friction is that one moment when you are trying to do something and a thought pops into your head and you're like, \"I'm not going to [music] do it.\" It's when you're running 10K's and you're at the 8K mark and you go, \"I'm not good at doing it.\" It's when you go to start writing the first chapter of your book and it's like, \"Oh, maybe the idea isn't good.\" That is the friction. You'll start noticing these moments. And the people that can push through that and continually grow that tolerance of pain through that can get anything that they want."
     }
   ],
   "stats": {
     "podcastEpisodes": 1
-  },
-  "errors": [
-    "Podcast: Feed fetch failed for The Ecom Academy: HTTP 404"
-  ]
+  }
 }
