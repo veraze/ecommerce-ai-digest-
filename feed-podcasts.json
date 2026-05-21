@@ -1,18 +1,15 @@
 {
-  "generatedAt": "2026-05-20T22:00:35.738Z",
+  "generatedAt": "2026-05-21T22:00:42.175Z",
   "lookbackHours": 336,
-  "podcasts": [
-    {
-      "source": "podcast",
-      "name": "Davie Fogarty",
-      "title": "Keep your word to yourself",
-      "guid": "-YCaxKp_r0s",
-      "url": "https://www.youtube.com/watch?v=-YCaxKp_r0s",
-      "publishedAt": "2026-05-20T03:30:12+00:00",
-      "transcript": "All a man really has is his word. His word to himself, his word to his family. When you say that you're going to do something, you do it. Now, I'm not some top 1% masculine man. I talk about anxiety more than anyone else on YouTube. It's to the point where I'm scared everyone thinks I'm a [ __ ] Everyone thinks I'm scared of everything. Public speaking, swimming. Yesterday I completely ditched the swim cuz it was too choppy and I was like, I'm going to have a panic attack in the water. So, I'm not like some macho man, but I do believe in that quote. All a man has is his word. And as soon as you start breaking it, this is the one thing discipline is probably the thing that I've improved more than anyone. Got ADHD. I used to say, \"I'm going to go do this. I'm going to do this.\" Even I said that I was going to do a triathlon last year, and I got, you know, maybe three training sessions in and I just gave up on it. Now, that doesn't happen. When I say that I'm going to do something, I do it. And that's going to hold me in good stead in kind of everything, not just business, not just fitness, but also in family and fun."
-    }
-  ],
+  "podcasts": [],
   "stats": {
-    "podcastEpisodes": 1
-  }
+    "podcastEpisodes": 0
+  },
+  "errors": [
+    "Podcast: Transcript error for \"Claude Just Changed Email Marketing Forever\": Supadata HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-",
+    "Podcast: Transcript error for \"You’re right where you need to be\": Supadata HTTP 503: no available server\n",
+    "Podcast: Transcript error for \"Higgsfield is Claude's NEW image and video generator #shorts\": Supadata HTTP 503: no available server\n",
+    "Podcast: Transcript error for \"NEW Video &amp; image generator inside Claude.. meet Higgsfield #shorts\": Supadata HTTP 503: no available server\n",
+    "Podcast: Transcript error for \"How I Run My Shopify Store With Claude Managed Agents\": Supadata HTTP 429: {\"error\":\"limit-exceeded\",\"message\":\"Limit Exceeded\",\"details\":\"Request rate limit on current plan was exceeded.\",\"documentationUrl\":\"https://supadata.ai/documentation/errors/limit-exceeded\"}"
+  ]
 }
