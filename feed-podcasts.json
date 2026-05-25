@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-05-23T22:00:47.438Z",
+  "generatedAt": "2026-05-25T05:42:01.051Z",
   "lookbackHours": 336,
   "podcasts": [],
   "stats": {
     "podcastEpisodes": 0
   },
   "errors": [
-    "Podcast: Transcript error for \"This is Shopify Agentic and here is EVERYTHING you need to know\": Supadata HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-"
+    "Podcast: Feed fetch failed for The Ecom Academy: HTTP 500",
+    "Podcast: Feed fetch failed for Davie Fogarty: HTTP 500",
+    "Podcast: Feed fetch failed for Daan Jonkman — AI for Shopify: HTTP 500"
   ]
 }
