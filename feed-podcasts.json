@@ -1,18 +1,13 @@
 {
-  "generatedAt": "2026-06-23T22:01:36.706Z",
+  "generatedAt": "2026-06-24T22:03:03.274Z",
   "lookbackHours": 336,
-  "podcasts": [
-    {
-      "source": "podcast",
-      "name": "Davie Fogarty",
-      "title": "One Oodie ad used to cost us $50,000",
-      "guid": "rnZEsv4o_OM",
-      "url": "https://www.youtube.com/watch?v=rnZEsv4o_OM",
-      "publishedAt": "2026-06-23T09:30:05+00:00",
-      "transcript": "People don't know this, but one of the reasons why Odi became an $800 million brand is I spent money on TV and high production videos just like this one. They were very very hard to script, but more importantly, they were very very hard to shoot costing like over $50,000 a video. What's crazy is look how quickly AI can do this. All I need to go to is this tool and then I write in a prompt very very simply like this and it will create a video this good. This is the first prompt, first attempt, and it has created something like this. Realistically, with AI now, the only limit to the production is your imagination and your ability to tell a story. Make sure you're using AI for e-commerce and if you aren't and you need mentorship and you need guidance, make sure you reach out to Daily Mentor because we have incredible coaches that will walk you through all of this."
-    }
-  ],
+  "podcasts": [],
   "stats": {
-    "podcastEpisodes": 1
-  }
+    "podcastEpisodes": 0
+  },
+  "errors": [
+    "Podcast: Error fetching The Ecom Academy: fetch failed",
+    "Podcast: Error fetching Davie Fogarty: fetch failed",
+    "Podcast: Error fetching Daan Jonkman — AI for Shopify: fetch failed"
+  ]
 }
