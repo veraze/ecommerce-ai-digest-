@@ -1,13 +1,18 @@
 {
-  "generatedAt": "2026-06-24T22:03:03.274Z",
+  "generatedAt": "2026-06-25T22:01:23.343Z",
   "lookbackHours": 336,
-  "podcasts": [],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "Davie Fogarty",
+      "title": "I thought making more money would finally make me feel secure.",
+      "guid": "DC4tqUrLMts",
+      "url": "https://www.youtube.com/watch?v=DC4tqUrLMts",
+      "publishedAt": "2026-06-25T09:30:10+00:00",
+      "transcript": "When I left school, I just thought I'm going to make as much money as possible and that will make me a non-anxious, non-insecure person and that did not work. After hitting my first successful business doing a hundred million dollars in sales, having a million dollars in the bank, I was like, yes, awesome. I'm super secure. And then the next day, the anxiety came back. I got all these thoughts that oh, you just got lucky. You need to do it a second time with a second business. And then I did that, did a hundred million dollars through that business and then again, the anxiety came back the next day. One of the most consistent psychological findings is that the nervous system will treat today's miracle as tomorrow's baseline. You'll constantly adapt to your actual mechanics. This is why so many successful founders have a big exit, sell for a hundred million dollars and then just fall in this deep state of depression. Having money is a very, very fun. You can do so many things. You can do things for other people. You can experience life to its fullest, but it will not make you a less anxious person. It'll probably make you more anxious. And the only solution to this, everyone can do this. You don't already need to be successful, is change the things that you're chasing to things that can't be measured. For example, rather than chasing revenue, you're chasing family connections. Rather than chasing a big business exit and Forbes 30 under 30, chase a mission and a purpose with a good group of people that brings you joy. A good litmus test is would I do this activity if money wasn't even in the equation?"
+    }
+  ],
   "stats": {
-    "podcastEpisodes": 0
-  },
-  "errors": [
-    "Podcast: Error fetching The Ecom Academy: fetch failed",
-    "Podcast: Error fetching Davie Fogarty: fetch failed",
-    "Podcast: Error fetching Daan Jonkman — AI for Shopify: fetch failed"
-  ]
+    "podcastEpisodes": 1
+  }
 }
