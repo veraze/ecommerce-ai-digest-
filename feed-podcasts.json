@@ -1,13 +1,18 @@
 {
-  "generatedAt": "2026-08-25T08:17:15.951Z",
+  "generatedAt": "2026-08-26T08:11:35.192Z",
   "lookbackHours": 336,
-  "podcasts": [],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "Davie Fogarty",
+      "title": "The old influencer model is broken",
+      "guid": "_yv_wepdGaI",
+      "url": "https://www.youtube.com/watch?v=_yv_wepdGaI",
+      "publishedAt": "2026-08-25T09:00:39+00:00",
+      "transcript": "Some of the biggest brands right now are using the creator affiliate system and are growing rapidly. Back in the day, the way that you would run influencers is you would send a product to someone, you'd might pay them $500, and even if the post sucked, nothing would happen. There was no incentive for them to actually do good creatives. Meaning, small creators were left in the dark because they had no followers. despite them creating incredibly persuasive and awesome creatives that could actually convert on Facebook and converted their traffic. Now, this creator affiliate system will track discount codes. It will track traffic. It will even allow you to track their creative on Facebook when you take it off their page and put it onto your ad account. This now means all of the best creators are actually incentivized to deliver results for your company. But there's a catch. The regions where Tik Tok shops doesn't exist, like Australia, the consumer and the creators behavior hasn't changed."
+    }
+  ],
   "stats": {
-    "podcastEpisodes": 0
-  },
-  "errors": [
-    "Podcast: Error fetching The Ecom Academy: fetch failed",
-    "Podcast: Error fetching Davie Fogarty: fetch failed",
-    "Podcast: Error fetching Daan Jonkman — AI for Shopify: fetch failed"
-  ]
+    "podcastEpisodes": 1
+  }
 }
