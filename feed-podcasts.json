@@ -1,13 +1,18 @@
 {
-  "generatedAt": "2026-09-06T08:26:59.324Z",
+  "generatedAt": "2026-09-07T08:00:30.113Z",
   "lookbackHours": 336,
-  "podcasts": [],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "Davie Fogarty",
+      "title": "This is how I used AI to get a Shopify sale in 24 hours",
+      "guid": "W44552p18QQ",
+      "url": "https://www.youtube.com/watch?v=W44552p18QQ",
+      "publishedAt": "2026-09-04T09:00:04+00:00",
+      "transcript": "إليك كيف استخدمت الذكاء الاصطناعي لتحقيق مبيعات على \" شوبيفاي\" في 24 ساعة. أول شيء نحتاجه هو صورة نموذجية. لذا، سأدخل إلى موقع \" بينتيريست\" وأقوم بتحميل هذه الصورة. بعد ذلك، سنقوم برفعها إلى \"ChatGPT\" وإنشاء ملف JSON، وهو عبارة عن كل هذا الكود. الآن، يمكننا إنشاء صورة انطلاقاً من ملف JSON هذا. يمكننا تحديد المنتج الذي نريد استبداله وإضافة منتجنا الخاص. فقط تأكد من أن المنتج الذي تبيعه بالفعل يشبه ما في الصورة. يمكننا أيضاً إنشاء رسومات رائعة المظهر كهذه في نفس الأداة ورفعها لإعلانات فيسبوك. حقق هذا المتجر مبيعات في غضون 24 ساعة، ووصلت أرباحه إلى حوالي 2300 دولار خلال 5 إلى 6 أيام."
+    }
+  ],
   "stats": {
-    "podcastEpisodes": 0
-  },
-  "errors": [
-    "Podcast: Error fetching The Ecom Academy: fetch failed",
-    "Podcast: Error fetching Davie Fogarty: fetch failed",
-    "Podcast: Error fetching Daan Jonkman — AI for Shopify: fetch failed"
-  ]
+    "podcastEpisodes": 1
+  }
 }
