@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-15T09:13:30.321Z",
+  "generatedAt": "2026-09-16T08:10:29.614Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Daan Jonkman — AI for Shopify",
-      "title": "How to Connect Claude to Google Ads in 4 Minutes (Free method)",
-      "guid": "YnQa-EdQXuM",
-      "url": "https://www.youtube.com/watch?v=YnQa-EdQXuM",
-      "publishedAt": "2026-09-14T15:00:06+00:00",
-      "transcript": "The official way to connect Cloud and Google Ads is very hard for a non-technical person, but there's an easier way with a few clicks and in under 4 minutes you have this up and running for yourself. This is Composure and Composure allows us to connect into Cloud and inside of Composure we can add all the softwares you can imagine. So also Google Ads and it's just with one click and the way we do that we click on connect my agent and here we see a MCP URL. We copy this URL. We'll also put this URL in the description and you go to your Cloud desktop app. You click on the plus icon and you hover over connectors and here we press add custom connector. Here we type the name Composure. And here we paste that URL what we just copied. Then we press continue. We press add. And now it will open up our browser and we press continue connecting. We give it access and we're all set now. Now we see Composure is connected. So if we go to our connectors, we press manage connector, we see that Composure is in here. So now it's time to connect Google Ads into Composure. We go back to connect apps and here we search for Google Ads. And here we see Google Ads. We press connect and it asks us for our customer ID. And the way we get our customer ID, if we go to our Ads dashboard, we see our name here. You copy this code. And here we enter the customer ID. We connect our account. And as we can see it's that easy. Now Google Ads is already connected and Composure is connected. So now we can start testing this and actually create the campaigns, do analysis on these campaigns. So, if we open up a new chat and we say, \"Okay, let's check the connection with our Google Ads account.\" We have connected it via Composio. Let's create an ad campaign in draft, so we know it is working. So, now we see it is using Composio to make the connection with Google Ads and to create this campaign in draft. As we see, the connection works both read and write access. So, let's go back to our ads account and let's see if the campaign is created. And as we see, this is the campaign, €5 a day, and that's exactly what Claude just created for us. And to actually have intelligent decisions, you can either ask Claude or you can add a skill. And the way we add skills is we go to customize. And here we see skills. And here are my skills. And I have created a Google Ads skill and this will audit, diagnose, and create suggestions for you. I will also add this skill in the free resources, so you can install this skill. And the way you do that, you click on add, you press upload skill, and here you upload that file what you can download. And now you can tell the chat, \"Okay, I want to use the Google Ads skill. I want to do an analysis on my current ads that are running and I want you to give me suggestions what we can improve and what the data tells us.\" And if you're in e-commerce and you like this type of content, you will really like my school community with a growing library of skills. You can connect with like-minded people. There are over 800 people in here right now. As you can see, all around the globe. So, also in the link in the description. So, you should be all set now with your connection with Google Ads and Claude. And if you do have any questions, just drop them in the comments down below and I will help you out. See you in the next one. Ciao."
+      "name": "The Ecom Academy",
+      "title": "Tasks AI does for me every day, once a week, once a month. #shorts",
+      "guid": "l_nFAHUxG7o",
+      "url": "https://www.youtube.com/watch?v=l_nFAHUxG7o",
+      "publishedAt": "2026-09-16T00:05:30+00:00",
+      "transcript": "Every day. Once a week."
     }
   ],
   "stats": {
