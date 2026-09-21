@@ -1,18 +1,21 @@
 {
-  "generatedAt": "2026-09-20T08:03:25.607Z",
+  "generatedAt": "2026-09-21T08:30:56.084Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Davie Fogarty",
-      "title": "A scooter built for superheroes?",
-      "guid": "BZzed_tTw34",
-      "url": "https://www.youtube.com/watch?v=BZzed_tTw34",
-      "publishedAt": "2026-09-19T13:00:05+00:00",
-      "transcript": "Who's ready for a ride to the future? >> [music] >> And this one has like a very unique NOISE TO IT. WE WERE THE FIRST ONE WHO ADAPT THE 21700 battery cells in an e-scooter in Australia. That means the e-scooter will be lighter, will be more powerful. It can go uh further away, faster charging. One of the things we are proud of is we have a license with a superhero IP. >> Superhero character. >> Right. >> Like a Batman scooter. Are there other benefits to your scooter? >> Yes, of course. For example, this one got a removable battery design. So, you can just unclick and take the battery out. Leave the scooter behind. Just take the much smaller battery with you. Charge it under your desk. >> No other scooter has that. >> On same price range, no. Last year we had 3.5 million cells. >> Wow. >> And this year we're expecting to have 2 millions more, reaching 5.5 millions. >> And what's your profit on that? >> The gross profit is approximately 40% to 45%. >> A big competitor may come along and change the entire game with a better battery or something, and then my company and my money is sad. I don't want my money to be sad. I'm out. >> I just don't know when I would get the cash flow from the business to pay back the investment. Unfortunately, I'm out. >> It becomes very, very difficult to try and convince that consumer of the value proposition that we have in front of us. So, for those reasons, I'm out."
+      "title": "This demo did not go to plan...",
+      "guid": "_WOrbFKCYt8",
+      "url": "https://www.youtube.com/watch?v=_WOrbFKCYt8",
+      "publishedAt": "2026-09-20T13:00:36+00:00",
+      "transcript": "Oh. >> You have to stop. >> OH, NO. >> You're not going to get your money back. >> It broke in half. >> You're just going to impact your life negatively. >> Hi Sharks, I'm Joe Pererini and I'm from Perth, Western Australia. >> I'm Aldo Gardiner from Perth, Western Australia. >> And we're here seeking $100,000 for a 25% equity stake in our company, the Loogenie. So, what separates the Loogenie from all the other toilet brushes out there on the market is our tablet dispensing mechanism that we've got built into this handle. At the click of a button, one tablet is released and drops into the toilet bowl, cleaning, sanitizing, and disinfecting. The difference between our brush is we've obviously got the bristles, which are brushing, and we've got Oh. Oh. 4 years ago, we started this journey. >> How much have you invested in the company? Or was it just the Kickstarter? >> About $507,000. >> $500,000? >> $507,000. That's including >> for this? >> Yeah. >> Of your own money? >> Our own money. >> That's a lot of money. Is that a lot of money for you guys? >> Absolutely. >> You've only got 33,000 in sales. Why do you keep putting more money into it? >> So, it was always like, you know, five grand, 10 grand, six grand, you know what I mean? A little bit of money here, there. We're so far in, you know, we've got to get this thing finished. >> This is a great idea. In business, an idea is just an idea. It really doesn't mean much. It's all about the execution. And from what I can see, your execution's been pretty poor. So, for that reason, I'm out. >> Yeah."
     }
   ],
   "stats": {
     "podcastEpisodes": 1
-  }
+  },
+  "errors": [
+    "Podcast: Error fetching Daan Jonkman — AI for Shopify: The operation was aborted due to timeout"
+  ]
 }
