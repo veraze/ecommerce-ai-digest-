@@ -1,21 +1,18 @@
 {
-  "generatedAt": "2026-09-21T08:30:56.084Z",
+  "generatedAt": "2026-09-25T08:00:26.281Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Davie Fogarty",
-      "title": "This demo did not go to plan...",
-      "guid": "_WOrbFKCYt8",
-      "url": "https://www.youtube.com/watch?v=_WOrbFKCYt8",
-      "publishedAt": "2026-09-20T13:00:36+00:00",
-      "transcript": "Oh. >> You have to stop. >> OH, NO. >> You're not going to get your money back. >> It broke in half. >> You're just going to impact your life negatively. >> Hi Sharks, I'm Joe Pererini and I'm from Perth, Western Australia. >> I'm Aldo Gardiner from Perth, Western Australia. >> And we're here seeking $100,000 for a 25% equity stake in our company, the Loogenie. So, what separates the Loogenie from all the other toilet brushes out there on the market is our tablet dispensing mechanism that we've got built into this handle. At the click of a button, one tablet is released and drops into the toilet bowl, cleaning, sanitizing, and disinfecting. The difference between our brush is we've obviously got the bristles, which are brushing, and we've got Oh. Oh. 4 years ago, we started this journey. >> How much have you invested in the company? Or was it just the Kickstarter? >> About $507,000. >> $500,000? >> $507,000. That's including >> for this? >> Yeah. >> Of your own money? >> Our own money. >> That's a lot of money. Is that a lot of money for you guys? >> Absolutely. >> You've only got 33,000 in sales. Why do you keep putting more money into it? >> So, it was always like, you know, five grand, 10 grand, six grand, you know what I mean? A little bit of money here, there. We're so far in, you know, we've got to get this thing finished. >> This is a great idea. In business, an idea is just an idea. It really doesn't mean much. It's all about the execution. And from what I can see, your execution's been pretty poor. So, for that reason, I'm out. >> Yeah."
+      "title": "This is the single biggest mistake business owners make when working with AI",
+      "guid": "zS0LwFC7xuU",
+      "url": "https://www.youtube.com/watch?v=zS0LwFC7xuU",
+      "publishedAt": "2026-09-24T09:00:34+00:00",
+      "transcript": "هذا هو أكبر خطأ يرتكبه أصحاب الأعمال عند التعامل مع الذكاء الاصطناعي. كلما دخلت في مكالمة وقال أحدهم إن الذكاء الاصطناعي لا يكتب بجودتي أو لا ينجز هذا العمل مثلي، أعرف أن هذه هي المشكلة الأساسية. اكتشفت هذا عندما بدأت العمل فعلياً مع Claude Code وأنشأت حاسوباً معزولاً، وهو ما يعني ببساطة حاسوباً لا يحتوي على أي معلومات أخرى. جزء من هذه العملية هو أنك تحتاج للبدء في تغذيته ببيانات جديدة، بيانات نظيفة للغاية، وكل ما هو وثيق الصلة به فعلاً. والشيء الرائع في Claude Code هو أنه يمتلك الآن نوافذ سياق ضخمة مع نموذج Opus. كما أنه يعمل محلياً، مما يمنحه قوة أكبر بكثير ويسمح له بالاطلاع على أحجام ملفات ضخمة للغاية. هذا سمح لي أخيراً بإنشاء مدير مالي ومدير تسويق ومدير عمليات بالذكاء الاصطناعي، يمكنهم الاطلاع على جداول بيانات ضخمة، ومعالجتها، وتقديم رؤى جيدة جداً لي. لذا، إذا كنت تعاني مع إجابات الذكاء الاصطناعي، ثق بي، استخدم Claude Code، وابنِ بيانات نظيفة جداً، وستحصل على نتائج مذهلة."
     }
   ],
   "stats": {
     "podcastEpisodes": 1
-  },
-  "errors": [
-    "Podcast: Error fetching Daan Jonkman — AI for Shopify: The operation was aborted due to timeout"
-  ]
+  }
 }
