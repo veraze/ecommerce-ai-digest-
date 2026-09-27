@@ -1,18 +1,21 @@
 {
-  "generatedAt": "2026-09-25T08:00:26.281Z",
+  "generatedAt": "2026-09-27T08:48:50.163Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Davie Fogarty",
-      "title": "This is the single biggest mistake business owners make when working with AI",
-      "guid": "zS0LwFC7xuU",
-      "url": "https://www.youtube.com/watch?v=zS0LwFC7xuU",
-      "publishedAt": "2026-09-24T09:00:34+00:00",
-      "transcript": "هذا هو أكبر خطأ يرتكبه أصحاب الأعمال عند التعامل مع الذكاء الاصطناعي. كلما دخلت في مكالمة وقال أحدهم إن الذكاء الاصطناعي لا يكتب بجودتي أو لا ينجز هذا العمل مثلي، أعرف أن هذه هي المشكلة الأساسية. اكتشفت هذا عندما بدأت العمل فعلياً مع Claude Code وأنشأت حاسوباً معزولاً، وهو ما يعني ببساطة حاسوباً لا يحتوي على أي معلومات أخرى. جزء من هذه العملية هو أنك تحتاج للبدء في تغذيته ببيانات جديدة، بيانات نظيفة للغاية، وكل ما هو وثيق الصلة به فعلاً. والشيء الرائع في Claude Code هو أنه يمتلك الآن نوافذ سياق ضخمة مع نموذج Opus. كما أنه يعمل محلياً، مما يمنحه قوة أكبر بكثير ويسمح له بالاطلاع على أحجام ملفات ضخمة للغاية. هذا سمح لي أخيراً بإنشاء مدير مالي ومدير تسويق ومدير عمليات بالذكاء الاصطناعي، يمكنهم الاطلاع على جداول بيانات ضخمة، ومعالجتها، وتقديم رؤى جيدة جداً لي. لذا، إذا كنت تعاني مع إجابات الذكاء الاصطناعي، ثق بي، استخدم Claude Code، وابنِ بيانات نظيفة جداً، وستحصل على نتائج مذهلة."
+      "name": "The Ecom Academy",
+      "title": "Ranking the best apps for ecommerce 📈 #shorts",
+      "guid": "JRz7CGKwUzA",
+      "url": "https://www.youtube.com/watch?v=JRz7CGKwUzA",
+      "publishedAt": "2026-09-23T23:53:31+00:00",
+      "transcript": "One out of 10 out of 10 out of 10 F out of 10 F out of 10 si out of 10 out of 10 out of 10 out of 10 10 out of ເັນ"
     }
   ],
   "stats": {
     "podcastEpisodes": 1
-  }
+  },
+  "errors": [
+    "Podcast: Error fetching Davie Fogarty: The operation was aborted due to timeout"
+  ]
 }
