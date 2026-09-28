@@ -1,21 +1,13 @@
 {
-  "generatedAt": "2026-09-27T08:48:50.163Z",
+  "generatedAt": "2026-09-28T08:17:59.841Z",
   "lookbackHours": 336,
-  "podcasts": [
-    {
-      "source": "podcast",
-      "name": "The Ecom Academy",
-      "title": "Ranking the best apps for ecommerce 📈 #shorts",
-      "guid": "JRz7CGKwUzA",
-      "url": "https://www.youtube.com/watch?v=JRz7CGKwUzA",
-      "publishedAt": "2026-09-23T23:53:31+00:00",
-      "transcript": "One out of 10 out of 10 out of 10 F out of 10 F out of 10 si out of 10 out of 10 out of 10 out of 10 10 out of ເັນ"
-    }
-  ],
+  "podcasts": [],
   "stats": {
-    "podcastEpisodes": 1
+    "podcastEpisodes": 0
   },
   "errors": [
-    "Podcast: Error fetching Davie Fogarty: The operation was aborted due to timeout"
+    "Podcast: Error fetching The Ecom Academy: fetch failed",
+    "Podcast: Error fetching Davie Fogarty: fetch failed",
+    "Podcast: Error fetching Daan Jonkman — AI for Shopify: fetch failed"
   ]
 }
