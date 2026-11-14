@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:04:23.226Z",
+  "generatedAt": "2026-11-14T09:59:55.534Z",
   "lookbackHours": 336,
   "podcasts": [],
   "stats": {
@@ -8,6 +8,6 @@
   "errors": [
     "Podcast: Error fetching The Ecom Academy: The operation was aborted due to timeout",
     "Podcast: Error fetching Davie Fogarty: The operation was aborted due to timeout",
-    "Podcast: Error fetching Daan Jonkman — AI for Shopify: The operation was aborted due to timeout"
+    "Podcast: Error fetching Daan Jonkman — AI for Shopify: fetch failed"
   ]
 }
